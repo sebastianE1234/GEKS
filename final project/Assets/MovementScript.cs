@@ -6,13 +6,16 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 7f;
     public Transform groundCheck;
     public LayerMask groundLayer;
+    public int extraJumps = 1; // Added for extra jumps
 
     private Rigidbody2D rb;
     private bool isGrounded;
+    private int jumpCount;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        jumpCount = extraJumps;
     }
 
     void Update()
@@ -23,11 +26,16 @@ public class PlayerMovement : MonoBehaviour
 
         // Ground Check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        if (isGrounded)
+        {
+            jumpCount = extraJumps; // Reset jump count when grounded
+        }
 
         // Jumping
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && (isGrounded || jumpCount > 0))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            jumpCount--;
         }
     }
 }
