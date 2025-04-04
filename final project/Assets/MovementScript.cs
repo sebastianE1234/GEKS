@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 7f;
     public Transform groundCheck;
     public LayerMask groundLayer;
-    public int maxExtraJumps = 2; // The number of jumps added when landing
+    public int maxExtraJumps = 5; // The number of jumps added when landing
 
     private Rigidbody2D rb;
     private bool isGrounded;
