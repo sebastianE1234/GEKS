@@ -18,19 +18,23 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
+        Debug.Log("Grounded: " + isGrounded);
+
         float moveInput = 0f;
         bool jumpPressed = false;
 
         if (isPlayerOne)
         {
-            moveInput = Input.GetAxis("Horizontal");
-            jumpPressed = Input.GetKeyDown(KeyCode.Space);
+            if (Input.GetKey(KeyCode.LeftArrow)) moveInput = -1f;
+            if (Input.GetKey(KeyCode.RightArrow)) moveInput = 1f;
+            jumpPressed = Input.GetKeyDown(KeyCode.UpArrow);
         }
         else
         {
             if (Input.GetKey(KeyCode.A)) moveInput = -1f;
             if (Input.GetKey(KeyCode.D)) moveInput = 1f;
-            jumpPressed = Input.GetKeyDown(KeyCode.LeftShift);
+            jumpPressed = Input.GetKeyDown(KeyCode.Space);
         }
 
         // Horizontal Movement
