@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 7f;
     public Transform groundCheck;
     public LayerMask groundLayer;
-    public bool isPlayerOne = true; // Set this in the Inspector for each player
+    public bool isPlayerOne = true; // Set this in the Inspector per player
 
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -21,8 +21,6 @@ public class PlayerMovement : MonoBehaviour
         float moveInput = 0f;
         bool jumpPressed = false;
 
-        // Player 1: Arrow keys + Space
-        // Player 2: A/D keys + Left Shift
         if (isPlayerOne)
         {
             moveInput = Input.GetAxis("Horizontal");
@@ -35,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
             jumpPressed = Input.GetKeyDown(KeyCode.LeftShift);
         }
 
-        // Movement
+        // Horizontal Movement
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         // Ground Check
