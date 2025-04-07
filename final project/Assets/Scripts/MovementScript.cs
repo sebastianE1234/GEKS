@@ -14,17 +14,24 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
     }
 
     void FixedUpdate()
     {
         // Ground Check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        Debug.Log("grounded? "+ isGrounded);
+        Debug.Log("grounded? " + isGrounded);
     }
 
     void Update()
     {
+
+
+        Vector3 viewPos = Camera.main.WorldToViewportPoint(transform.position);
+        viewPos.x = Mathf.Clamp(viewPos.x, 0.05f, 0.95f); // Adjust these values as needed
+        transform.position = Camera.main.ViewportToWorldPoint(viewPos);
+
         float moveInput = 0f;
         bool jumpPressed = false;
 
@@ -55,12 +62,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    void OnDrawGizmosSelected()
-    {
-        if (groundCheck != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, 0.2f);
-        }
-    }
+
 }
+
+    
