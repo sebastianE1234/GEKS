@@ -119,6 +119,32 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &332197707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4918169273184168246, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
+  m_PrefabInstance: {fileID: 1909909908208757867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &332197712 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7607868671377102354, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
+  m_PrefabInstance: {fileID: 1909909908208757867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &332197713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332197707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a2e8a0057dcc4079b2d2e73d673c5f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireballPrefab: {fileID: 6783197617887760591, guid: ab4d7b1116ea54007a539cbe37014e0c, type: 3}
+  firePoint: {fileID: 332197712}
+  fireballSpeed: 10
+  playerID: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,6 +584,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1590192923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8079794765336467742, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
+  m_PrefabInstance: {fileID: 1155615859625329901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1590192928 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1275028534209659013, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
+  m_PrefabInstance: {fileID: 1155615859625329901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1590192929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590192923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a2e8a0057dcc4079b2d2e73d673c5f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireballPrefab: {fileID: 6783197617887760591, guid: ab4d7b1116ea54007a539cbe37014e0c, type: 3}
+  firePoint: {fileID: 1590192928}
+  fireballSpeed: 10
+  playerID: 0
 --- !u!1001 &1155615859625329901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -634,10 +686,17 @@ PrefabInstance:
       propertyPath: groundCheck
       value: 
       objectReference: {fileID: 1364036822}
+    - target: {fileID: 9092970470737317565, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
+      propertyPath: isPlayerOne
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8079794765336467742, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1590192929}
   m_SourcePrefab: {fileID: 100100000, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
 --- !u!1001 &1909909908208757867
 PrefabInstance:
@@ -711,10 +770,17 @@ PrefabInstance:
       propertyPath: groundCheck
       value: 
       objectReference: {fileID: 1364036822}
+    - target: {fileID: 8124446566583106776, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
+      propertyPath: isPlayerOne
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4918169273184168246, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 332197713}
   m_SourcePrefab: {fileID: 100100000, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
