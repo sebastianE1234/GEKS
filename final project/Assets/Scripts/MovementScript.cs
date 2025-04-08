@@ -28,32 +28,36 @@ public class PlayerMovement : MonoBehaviour
     {
 
 
-        Vector3 viewPos = Camera.main.WorldToViewportPoint(transform.position);
-        viewPos.x = Mathf.Clamp(viewPos.x, 0.05f, 0.95f); // Adjust these values as needed
-        transform.position = Camera.main.ViewportToWorldPoint(viewPos);
+        
 
         float moveInput = 0f;
-      
+        bool jumpPressed = false;
 
         if (isPlayerOne)
         {
             if (Input.GetKey(KeyCode.LeftArrow)) moveInput = -1f;
             if (Input.GetKey(KeyCode.RightArrow)) moveInput = 1f;
 
-
+            jumpPressed = Input.GetKeyDown(KeyCode.UpArrow);
 
         }
         else
         {
             if (Input.GetKey(KeyCode.A)) moveInput = -1f;
             if (Input.GetKey(KeyCode.D)) moveInput = 1f;
+            jumpPressed = Input.GetKeyDown(KeyCode.Space);
         }
 
         // Horizontal Movement
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         // Jumping
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
     }
+
 
 
 
