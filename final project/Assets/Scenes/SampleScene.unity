@@ -568,11 +568,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1275028534209659013, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.29
+      value: -7.85
       objectReference: {fileID: 0}
     - target: {fileID: 1275028534209659013, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.03
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1275028534209659013, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -614,6 +614,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: wanda the wizard_0
       objectReference: {fileID: 0}
+    - target: {fileID: 9043601482268976965, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
+      propertyPath: m_Size.x
+      value: 1.8253942
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043601482268976965, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
+      propertyPath: m_Size.y
+      value: 4.4664526
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043601482268976965, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.30678964
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043601482268976965, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.16006422
+      objectReference: {fileID: 0}
     - target: {fileID: 9092970470737317565, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
       propertyPath: groundCheck
       value: 
@@ -631,6 +647,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1818506221739946250, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
+      propertyPath: m_Size.x
+      value: 3.3993578
+      objectReference: {fileID: 0}
+    - target: {fileID: 1818506221739946250, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
+      propertyPath: m_Size.y
+      value: 4.0396147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1818506221739946250, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.13338709
+      objectReference: {fileID: 0}
+    - target: {fileID: 1818506221739946250, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.24009609
+      objectReference: {fileID: 0}
     - target: {fileID: 4918169273184168246, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
       propertyPath: m_Name
       value: Westley_0
