@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Westley_0: 3346605253308273492
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
