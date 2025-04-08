@@ -28,39 +28,41 @@ public class PlayerMovement : MonoBehaviour
     {
 
 
-        
+
 
         float moveInput = 0f;
-        bool jumpPressed = false;
+
 
         if (isPlayerOne)
         {
             if (Input.GetKey(KeyCode.LeftArrow)) moveInput = -1f;
             if (Input.GetKey(KeyCode.RightArrow)) moveInput = 1f;
 
-            jumpPressed = Input.GetKeyDown(KeyCode.UpArrow);
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            }
 
         }
         else
         {
             if (Input.GetKey(KeyCode.A)) moveInput = -1f;
             if (Input.GetKey(KeyCode.D)) moveInput = 1f;
-            jumpPressed = Input.GetKeyDown(KeyCode.Space);
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            }
         }
 
         // Horizontal Movement
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         // Jumping
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
+
+
+
+
+
     }
-
-
-
-
 }
-
     

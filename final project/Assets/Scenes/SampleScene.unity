@@ -759,8 +759,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
-  isPlayerOne: 0
-  isPlayerTwo: 1
+  playerID: 1
 --- !u!1 &1985713216
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,8 +961,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
-  isPlayerOne: 1
-  isPlayerTwo: 0
+  playerID: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
