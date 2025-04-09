@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI; // For accessing UI components
+using TMPro;
 
 public class HealthManager : MonoBehaviour
 {
@@ -66,7 +67,7 @@ public class HealthManager : MonoBehaviour
         }
         else if (currentHealth <= maxHealth * 0.5)
         {
-            healthSlider.fillRect.GetComponent<Image>().color = Color.blue; // Medium health = Orange
+            healthSlider.fillRect.GetComponent<Image>().color = Color.blue; // Medium health = blue 
         }
         else
         {
