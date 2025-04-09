@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - P1
+  - P2
   layers:
   - Default
   - TransparentFX
@@ -12,8 +14,8 @@ TagManager:
   - Water
   - UI
   - ground
-  - 
-  - 
+  - Colosseum
+  - HealthBar
   - 
   - 
   - 
@@ -40,6 +42,24 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Colosseum
+    uniqueID: 625413795
+    locked: 0
+  - name: Ground
+    uniqueID: 1039797777
+    locked: 0
+  - name: HealthBar
+    uniqueID: 346874013
+    locked: 0
+  - name: Characters
+    uniqueID: 3282865367
+    locked: 0
+  - name: Square
+    uniqueID: 3818074043
+    locked: 0
+  - name: HealthBar2
+    uniqueID: 2767989475
     locked: 0
   m_RenderingLayers:
   - Default

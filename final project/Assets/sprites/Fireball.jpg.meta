@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: b0f350214360c4fa99697e70d9b71d29
+guid: e3abff4c1f0d84cc5aadfcc7d87f6bca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7673350294038550757
-    second: HealthBar-removebg-preview_0
-  - first:
-      213: 3847799378318098268
-    second: HealthBar-removebg-preview_1
+      213: -6607481912129624618
+    second: Fireball_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HealthBar-removebg-preview_0
+      name: Fireball_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1218
-        height: 205
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e89e41ff673d7a60800000000000000
-      internalID: 7673350294038550757
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HealthBar-removebg-preview_1
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 0
-        width: 97
-        height: 140
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5f7e97e521266530800000000000000
-      internalID: 3847799378318098268
+      spriteID: 6d5e1b775328d44a0800000000000000
+      internalID: -6607481912129624618
       vertices: []
       indices: 
       edges: []
@@ -159,9 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      HealthBar-removebg-preview_0: 7673350294038550757
-      HealthBar-removebg-preview_1: 3847799378318098268
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

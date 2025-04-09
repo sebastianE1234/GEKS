@@ -8,7 +8,7 @@ public class HealthManager : MonoBehaviour
     public Slider healthSlider;   // Slider for the health bar
     public Button damageButton;   // Button to take damage
     public Button healButton;     // Button to heal
-    public Text healthText;       // Text to display health status
+ 
 
     // Initial Health value
     private int maxHealth = 100;
@@ -58,7 +58,7 @@ public class HealthManager : MonoBehaviour
     private void UpdateHealthUI()
     {
         healthSlider.value = currentHealth;
-        healthText.text = $"Health: {currentHealth}/{maxHealth}";
+      
 
         // Change health bar color based on current health
         if (currentHealth <= maxHealth * 0.2)
