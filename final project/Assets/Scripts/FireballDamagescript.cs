@@ -23,11 +23,7 @@ public class Fireball : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             // Get the Player script and apply damage
-            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(damage);
-            }
+           
 
             // Destroy the fireball after collision
             Destroy(gameObject);
