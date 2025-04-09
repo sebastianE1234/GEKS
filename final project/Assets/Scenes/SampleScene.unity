@@ -220,6 +220,19 @@ MonoBehaviour:
   firePoint: {fileID: 332197712}
   fireballSpeed: 10
   playerID: 1
+--- !u!114 &332197718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332197707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7005219027149b4bbc2161b0a11d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1001 &467005061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -340,7 +353,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 72.1, y: 112.7}
+  m_AnchoredPosition: {x: 75.8, y: 36}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &479341188
@@ -1180,8 +1193,13 @@ Transform:
   m_GameObject: {fileID: 1364036819}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 1.0546, y: -7.1919, z: 0}
   m_LocalScale: {x: 41.482597, y: 3.5319996, z: 1}
+=======
+  m_LocalPosition: {x: 0.0303, y: -8.9048, z: 0}
+  m_LocalScale: {x: 28.065773, y: 6.957686, z: 1}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1287,6 +1305,19 @@ MonoBehaviour:
   firePoint: {fileID: 1590192928}
   fireballSpeed: 10
   playerID: 0
+--- !u!114 &1590192934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590192923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7005219027149b4bbc2161b0a11d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &1710926181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,8 +1692,13 @@ Transform:
   m_GameObject: {fileID: 1784666474}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 1.1408, y: 0.5248, z: 0}
   m_LocalScale: {x: 1.6306231, y: 1.3082504, z: 1}
+=======
+  m_LocalPosition: {x: -0.0388, y: 1.6128, z: 0}
+  m_LocalScale: {x: 1.1047933, y: 1.4787301, z: 1}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2164,6 +2200,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8079794765336467742, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1590192929}
+    - targetCorrespondingSourceObject: {fileID: 8079794765336467742, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1590192934}
   m_SourcePrefab: {fileID: 100100000, guid: 67516bda2d7134b3f8298955ed68e17e, type: 3}
 --- !u!1001 &1909909908208757867
 PrefabInstance:
@@ -2260,6 +2299,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4918169273184168246, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 332197713}
+    - targetCorrespondingSourceObject: {fileID: 4918169273184168246, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 332197718}
   m_SourcePrefab: {fileID: 100100000, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
