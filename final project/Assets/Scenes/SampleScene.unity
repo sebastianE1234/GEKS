@@ -1908,6 +1908,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1116119522073883095, guid: c34abb0e739894a24a8a31947bd857c4, type: 3}
+      propertyPath: healButton
+      value: 
+      objectReference: {fileID: 1741279160}
+    - target: {fileID: 1116119522073883095, guid: c34abb0e739894a24a8a31947bd857c4, type: 3}
+      propertyPath: damageButton
+      value: 
+      objectReference: {fileID: 1147645642}
+    - target: {fileID: 1116119522073883095, guid: c34abb0e739894a24a8a31947bd857c4, type: 3}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1803398389}
     - target: {fileID: 2276224961406565681, guid: c34abb0e739894a24a8a31947bd857c4, type: 3}
       propertyPath: m_Name
       value: HealthBar-removebg-preview_0
