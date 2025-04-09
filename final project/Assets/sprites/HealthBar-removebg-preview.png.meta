@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 8100f9dd7798e4c08818284926d31d58
+guid: b0f350214360c4fa99697e70d9b71d29
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9073845281653625145
-    second: IMG_0070_0
+      213: 7673350294038550757
+    second: HealthBar-removebg-preview_0
+  - first:
+      213: 3847799378318098268
+    second: HealthBar-removebg-preview_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0070_0
+      name: HealthBar-removebg-preview_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1313
-        height: 390
+        width: 1218
+        height: 205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93191d75536cced70800000000000000
-      internalID: 9073845281653625145
+      spriteID: 5e89e41ff673d7a60800000000000000
+      internalID: 7673350294038550757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 97
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f7e97e521266530800000000000000
+      internalID: 3847799378318098268
       vertices: []
       indices: 
       edges: []
@@ -134,8 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      IMG_0070_0: 9073845281653625145
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
