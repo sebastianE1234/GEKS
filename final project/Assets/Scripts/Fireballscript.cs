@@ -6,7 +6,10 @@ public class SimpleFireballShooter : MonoBehaviour
 {
     public GameObject FireballPrefab;  // Drag your Fireball prefab here
     public Transform firePoint;        // Where the fireball spawns
-    public float fireballSpeed = 10f;  // Speed of the fireball
+    public float fireballSpeed = 10f; // Speed of the fireball
+    public int damage = 10; // Amount of damage the fireball deals
+
+    
 
     public enum PlayerID { PlayerOne, PlayerTwo }
     public PlayerID playerID;
@@ -24,6 +27,8 @@ public class SimpleFireballShooter : MonoBehaviour
         }
     }
 
+
+
     void Shoot(Vector2 direction)
     {
         GameObject fireball = Instantiate(FireballPrefab, firePoint.position, Quaternion.identity);
@@ -34,3 +39,4 @@ public class SimpleFireballShooter : MonoBehaviour
         }
     }
 }
+ 
