@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6577111098148151850}
   - component: {fileID: 5596480842420627073}
   - component: {fileID: -2666875529493987355}
-  - component: {fileID: 4674202758792490226}
-  - component: {fileID: 6699811654430440679}
+  - component: {fileID: -4023776096630336604}
+  - component: {fileID: -27125797059237233}
   m_Layer: 0
   m_Name: fireball-removebg-preview_0
   m_TagString: Untagged
@@ -98,14 +98,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6915827732482191247}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 6
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -117,7 +117,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &4674202758792490226
+--- !u!58 &-4023776096630336604
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,7 +153,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.095
---- !u!114 &6699811654430440679
+--- !u!114 &-27125797059237233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,8 +162,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6915827732482191247}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 713d6dfe827b147dabd0ae62d8a2402e, type: 3}
+  m_Script: {fileID: 11500000, guid: b238f81b660dc4b3a9a1d97febcb79f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 20
-  destroyAfterSeconds: 5
+  pHealth: {fileID: 0}
+  damage: 0

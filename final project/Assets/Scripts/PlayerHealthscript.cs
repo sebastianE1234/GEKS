@@ -40,5 +40,11 @@ private void Die()
     {
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
     }
+<<<<<<< HEAD
 
 }
+=======
+   
+}
+
+>>>>>>> 072204e2ae29d832ec856e459a640b4f3db85011
