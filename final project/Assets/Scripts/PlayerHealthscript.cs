@@ -21,14 +21,6 @@ public class PlayerHealth : MonoBehaviour
     {
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
     }
-    TakeDamage takeDamage;
-
-    internal void TakeDamage(int damageAmount)
-    {
-        throw new NotImplementedException();
-    }
+   
 }
 
-internal class TakeDamage
-{
-}
