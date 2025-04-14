@@ -6,6 +6,25 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public int currentHealth = 100;
+
+public void TakeDamage(int amount)
+{
+    currentHealth -= amount;
+    if (currentHealth <= 0)
+    {
+        Die();
+    }
+}
+
+private void Die()
+{
+    // Handle player death
+    Debug.Log("Player died");
+    // You can add more logic here
+}
+
+
     public float health;
     public float maxHealth;
     public Image healthBar;
@@ -21,14 +40,5 @@ public class PlayerHealth : MonoBehaviour
     {
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
     }
-    TakeDamage takeDamage;
 
-    internal void TakeDamage(int damageAmount)
-    {
-        throw new NotImplementedException();
-    }
-}
-
-internal class TakeDamage
-{
 }
