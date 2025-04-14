@@ -8,21 +8,21 @@ public class PlayerHealth : MonoBehaviour
 {
     public int currentHealth = 100;
 
-public void TakeDamage(int amount)
-{
-    currentHealth -= amount;
-    if (currentHealth <= 0)
+    public void TakeDamage(int amount)
     {
-        Die();
+        currentHealth -= amount;
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
-}
 
-private void Die()
-{
-    // Handle player death
-    Debug.Log("Player died");
-    // You can add more logic here
-}
+    private void Die()
+    {
+        // Handle player death
+        Debug.Log("Player died");
+        // You can add more logic here
+    }
 
 
     public float health;
@@ -40,11 +40,7 @@ private void Die()
     {
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
     }
-<<<<<<< HEAD
+
+
 
 }
-=======
-   
-}
-
->>>>>>> 072204e2ae29d832ec856e459a640b4f3db85011
