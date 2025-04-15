@@ -16,9 +16,9 @@ TagManager:
   - ground
   - Colosseum
   - HealthBar
-  - 
-  - 
-  - 
+  - FireBall
+  - Player1
+  - Player2
   - 
   - 
   - 
@@ -49,17 +49,11 @@ TagManager:
   - name: Ground
     uniqueID: 1039797777
     locked: 0
-  - name: HealthBar
-    uniqueID: 346874013
-    locked: 0
   - name: Characters
     uniqueID: 3282865367
     locked: 0
   - name: Square
     uniqueID: 3818074043
-    locked: 0
-  - name: HealthBar2
-    uniqueID: 2767989475
     locked: 0
   m_RenderingLayers:
   - Default
