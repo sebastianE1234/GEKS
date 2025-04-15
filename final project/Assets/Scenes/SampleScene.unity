@@ -236,6 +236,19 @@ MonoBehaviour:
   health: 50
   MaxHealth: 100
   healthBar: {fileID: 991189952}
+--- !u!114 &332197728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332197707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b238f81b660dc4b3a9a1d97febcb79f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
 --- !u!1 &449128345 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3076004464718572186, guid: c818a693b768a4cef8a3d30da377243c, type: 3}
@@ -268,12 +281,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449128345}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b238f81b660dc4b3a9a1d97febcb79f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 20
+  damageAmount: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,6 +299,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -411,6 +425,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be431bad4351b44a1a0788a7024a8143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1053,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1638369120602530619, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1818506221739946250, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
       propertyPath: m_Size.x
       value: 3.3993578
@@ -1125,6 +1155,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4918169273184168246, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 332197723}
+    - targetCorrespondingSourceObject: {fileID: 4918169273184168246, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 332197728}
   m_SourcePrefab: {fileID: 100100000, guid: 1766dfab841334b6cb1158d4733f5a9e, type: 3}
 --- !u!1001 &2410831523355587674
 PrefabInstance:
@@ -1138,6 +1171,10 @@ PrefabInstance:
       propertyPath: groundCheck
       value: 
       objectReference: {fileID: 1364036822}
+    - target: {fileID: 53050716935782775, guid: c818a693b768a4cef8a3d30da377243c, type: 3}
+      propertyPath: isPlayerOne
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3076004464718572186, guid: c818a693b768a4cef8a3d30da377243c, type: 3}
       propertyPath: m_Name
       value: Wanda

@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Ground Check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        Debug.Log("grounded? " + isGrounded);
+        
     }
 
     void Update()
