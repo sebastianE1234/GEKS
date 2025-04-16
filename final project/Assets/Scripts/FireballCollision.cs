@@ -13,12 +13,27 @@ public class FireballCollision : MonoBehaviour
             Debug.Log("Fireball Collided");
             if (playerHealth != null)
             {
-                
+                Debug.Log("hi");
                 playerHealth.TakeDamage(damageAmount);
             }
 
             // Destroy the fireball after impact
             Destroy(gameObject);
+            
+               if (collision.gameObject.CompareTag("P1"))
+            {
+                PlayerHealth playerHealth1 = collision.gameObject.GetComponent<PlayerHealth>();
+            }
+
+            
+
         }
+
+
+
     }
+
+
 }
+
+
