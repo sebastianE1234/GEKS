@@ -37,7 +37,7 @@ public class Fireball : MonoBehaviour
                 health.TakeDamage(damage);
             }
 
-            if()
+           
         }
     }
 }

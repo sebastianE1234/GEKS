@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fireball.b-removebg-preview_0: 2270161023416161970
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
