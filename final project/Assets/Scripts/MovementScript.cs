@@ -35,6 +35,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (isPlayerOne)
         {
+
+
             if (Input.GetKey(KeyCode.LeftArrow)) moveInput = -1f;
             if (Input.GetKey(KeyCode.RightArrow)) moveInput = 1f;
 
@@ -46,6 +48,9 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            
+           
+
             if (Input.GetKey(KeyCode.A)) moveInput = -1f;
             if (Input.GetKey(KeyCode.D)) moveInput = 1f;
             if (Input.GetKeyDown(KeyCode.W))
@@ -64,5 +69,6 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
-}
     
+}
+     

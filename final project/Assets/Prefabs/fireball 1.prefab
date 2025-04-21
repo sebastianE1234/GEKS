@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5596480842420627073}
   - component: {fileID: -2666875529493987355}
   - component: {fileID: -2482994229191692326}
-  - component: {fileID: -5799182722045356543}
+  - component: {fileID: 5371849869160883949}
   m_Layer: 9
-  m_Name: fireball-removebg-preview_0
+  m_Name: fireball 1
   m_TagString: Fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,13 +147,13 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.11
---- !u!114 &-5799182722045356543
+--- !u!114 &5371849869160883949
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,7 +162,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6915827732482191247}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b238f81b660dc4b3a9a1d97febcb79f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 4934736d942b2497789070b75e4795e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
