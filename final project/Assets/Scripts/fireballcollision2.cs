@@ -11,7 +11,7 @@ public class Fireballcollision1 : MonoBehaviour
         if (collision.gameObject.CompareTag("P2"))
         {
             // Call the method to deal damage to the player
-            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            Health playerHealth = collision.gameObject.GetComponent<Health>();
             Debug.Log("Fireball Collided");
             if (playerHealth != null)
 
