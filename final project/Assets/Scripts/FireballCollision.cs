@@ -8,9 +8,9 @@ public class FireballCollision : MonoBehaviour
     {
        
             
-               if (collision.gameObject.CompareTag("P1"))
+               if (collision.gameObject.CompareTag("player"))
             {
-                PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+                Health playerHealth = collision.gameObject.GetComponent<Health>();
                 Debug.Log("Fireball Collided");
                 if (playerHealth != null)
 
