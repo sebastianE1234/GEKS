@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System;
 
 public class Fireballcollision1 : MonoBehaviour
 {
@@ -23,5 +23,13 @@ public class Fireballcollision1 : MonoBehaviour
             // Destroy the fireball after impact
             Destroy(gameObject);
         }
+    }
+}
+
+internal class PlayerHealth
+{
+    internal void TakeDamage(int damageAmount)
+    {
+        throw new NotImplementedException();
     }
 }
