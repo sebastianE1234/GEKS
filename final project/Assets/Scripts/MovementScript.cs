@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 7f;
     public Transform groundCheck;
     public LayerMask groundLayer;
-    public bool isPlayerOne = true; // Set this in the Inspector per player
+    public bool isPlayer = true; // Set this in the Inspector per player
 
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         float moveInput = 0f;
 
 
-        if (isPlayerOne)
+        if (isPlayer)
         {
 
 
