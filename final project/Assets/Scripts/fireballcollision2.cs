@@ -5,7 +5,7 @@ using System.Collections;
 public class Fireballcollision1 : MonoBehaviour
 {
 
-    public int damageAmount = 10;
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -16,8 +16,8 @@ public class Fireballcollision1 : MonoBehaviour
             if (playerHealth != null)
 
             {
-                Debug.Log("hi");
-                playerHealth.TakeDamage(damageAmount);
+                Debug.Log("hit enemy");
+                
             }
 
             // Destroy the fireball after impact

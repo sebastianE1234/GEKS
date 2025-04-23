@@ -4,7 +4,7 @@ public class Health : MonoBehaviour
 {
     public int health;
     public int maxHealth = 10;
-
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,11 +17,15 @@ public class Health : MonoBehaviour
         
     }
 
+
     public void TakeDamage(int amount)
     {
+
         health -= amount;
+
         if(health <= 0)
         {
+            Debug.Log("Game Over!");
             Destroy(gameObject);
         }
     }
