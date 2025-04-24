@@ -1,7 +1,7 @@
 using UnityEngine;
-using TMPro; 
+using TMPro;
 
-public class PlayerController : MonoBehaviour
+public class GameController : MonoBehaviour
 {
     public TextMeshProUGUI gameOverText;
     private bool isDead = false;
@@ -37,4 +37,5 @@ public class PlayerController : MonoBehaviour
         gameOverText.enabled = true;  // Make the Game Over text visible
         Time.timeScale = 0;  // Freeze the game (optional, to stop gameplay)
     }
+
 }
