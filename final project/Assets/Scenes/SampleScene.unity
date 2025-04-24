@@ -119,6 +119,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &187219576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 187219578}
+  - component: {fileID: 187219577}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &187219577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187219576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed38c7b3023e04193a3d17b4b373ce0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverText: {fileID: 1562301621}
+  health: 50
+--- !u!4 &187219578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187219576}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 525.6687, y: 411, z: -6.047659}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &449128351 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7030513748652491213, guid: c818a693b768a4cef8a3d30da377243c, type: 3}
@@ -522,6 +568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1825762f7f5a34a2d80d220ef554cb74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverText: {fileID: 1562301621}
   health: 0
   maxHealth: 100
 --- !u!1 &1041273731
@@ -787,7 +834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 1562301621}
-  health: 100
+  health: 50
 --- !u!4 &1421230318
 Transform:
   m_ObjectHideFlags: 0
@@ -1269,6 +1316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1825762f7f5a34a2d80d220ef554cb74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverText: {fileID: 1562301621}
   health: 0
   maxHealth: 100
 --- !u!1001 &6949937725252194661
@@ -1378,3 +1426,4 @@ SceneRoots:
   - {fileID: 1041273735}
   - {fileID: 565438670}
   - {fileID: 1421230318}
+  - {fileID: 187219578}
