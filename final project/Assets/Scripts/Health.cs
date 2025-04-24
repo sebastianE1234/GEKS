@@ -1,7 +1,9 @@
 using UnityEngine;
+using TMPro;
 
 public class Health : MonoBehaviour
 {
+    public TextMeshProUGUI gameOverText;
     public int health;
     public int maxHealth = 10;
     
@@ -27,6 +29,7 @@ public class Health : MonoBehaviour
         {
             Debug.Log("Game Over!");
             Destroy(gameObject);
+            gameOverText.enabled = true;
         }
     }
 }
