@@ -1,40 +1,60 @@
 using UnityEngine;
-using TMPro; 
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+
+    public void RestartLevel()
+    {
+        Time.timeScale = 1; // Unfreeze the game
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public TextMeshProUGUI gameOverText;
     private bool isDead = false;
 
-    // Example health system (adjust as needed)
     public int health = 50;
 
     void Start()
     {
-        gameOverText.enabled = false;
+        if (gameOverText != null)
+            gameOverText.enabled = false;
+
+        Time.timeScale = 1; // Ensure time is running when the game starts
     }
+
     void Update()
     {
-        // Check if the player is dead
         if (health <= 0 && !isDead)
         {
             Die();
         }
 
+        // Restart with the R key (optional)
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RestartLevel();
+        }
     }
 
-    // Simulate player taking damage
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         health -= damage;
     }
 
-    // This method is called when the player dies
     void Die()
     {
         isDead = true;
-        gameOverText.text = "Game Over";  // Display the Game Over message
-        gameOverText.enabled = true;  // Make the Game Over text visible
-        Time.timeScale = 0;  // Freeze the game (optional, to stop gameplay)
+
+        if (gameOverText != null)
+        {
+            gameOverText.text = "Game Over";
+            gameOverText.enabled = true;
+        }
+
+        Time.timeScale = 0;
     }
+
+    
 }
