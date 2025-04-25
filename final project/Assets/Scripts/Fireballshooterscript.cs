@@ -8,9 +8,9 @@ public class SimpleFireballShooter : MonoBehaviour
     public Transform firePoint;        // Where the fireball spawns
     public float fireballSpeed = 10f; // Speed of the fireball
 
-
     public enum PlayerID { PlayerOne, PlayerTwo }
     public PlayerID playerID;
+
     void Update()
     {
         if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.B))
