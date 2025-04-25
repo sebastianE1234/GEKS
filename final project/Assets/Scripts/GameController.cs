@@ -1,6 +1,6 @@
 using UnityEngine;
 using TMPro;
-<
+using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
 
@@ -8,6 +8,15 @@ public class GameController : MonoBehaviour
     {
         Time.timeScale = 1; // Unfreeze the game
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void GoBack()
+    {
+        SceneManager.LoadScene("OpeningScreen");
+    }
+    public void GoForward()
+    {
+        SceneManager.LoadScene("Encanted forest");
     }
 
     public TextMeshProUGUI gameOverText;
@@ -54,4 +63,4 @@ public class GameController : MonoBehaviour
 
         Time.timeScale = 0;
     }
-
+}

@@ -4,21 +4,29 @@ using UnityEngine;
 
 public class SimpleFireballShooter : MonoBehaviour
 {
+    public PlayerStats stats;
     public GameObject FireballPrefab;  // Drag your Fireball prefab here
     public Transform firePoint;        // Where the fireball spawns
     public float fireballSpeed = 10f; // Speed of the fireball
 
+    void Start()
+    {
+        stats = GetComponent<PlayerStats>();
+    }
 
     public enum PlayerID { PlayerOne, PlayerTwo }
     public PlayerID playerID;
     void Update()
     {
         if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.B))
-        {
-            Shoot(Vector2.right);
-        }
 
-
+            if(stats.ammo > 0)
+            {
+                Shoot(Vector2.right);
+                stats.UseAmmo();
+                Debug.Log("Shot fired! Ammo left;" + stats.ammo);
+            }
+       
     }
 
 

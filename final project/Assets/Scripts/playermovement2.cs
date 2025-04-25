@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class playermovement2 : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float jumpForce = 7f;
@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Ground Check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        
+
     }
 
     void Update()
@@ -48,8 +48,8 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            
-           
+
+
 
             if (Input.GetKey(KeyCode.A)) moveInput = -1f;
             if (Input.GetKey(KeyCode.D)) moveInput = 1f;
@@ -69,6 +69,5 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
-    
+
 }
-     
