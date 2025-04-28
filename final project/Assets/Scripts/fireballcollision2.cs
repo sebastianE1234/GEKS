@@ -18,8 +18,6 @@ public class Fireballcollision1 : MonoBehaviour
             if (playerHealth != null)
             {
                 Debug.Log("hit enemy");
-
-                playerHealth.ShowDamageText(damage);
             }
             Destroy(gameObject);
         }
