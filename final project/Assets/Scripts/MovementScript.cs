@@ -51,8 +51,8 @@ public class PlayerMovement : MonoBehaviour
             
            
 
-            if (Input.GetKey(KeyCode.A)) moveInput = -1f;
-            if (Input.GetKey(KeyCode.D)) moveInput = 1f;
+            if (Input.GetKey(KeyCode.A)) moveInput = 1f;
+            if (Input.GetKey(KeyCode.D)) moveInput = -1f;
             if (Input.GetKeyDown(KeyCode.W))
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
