@@ -13,7 +13,7 @@ public class SimpleFireballShooter : MonoBehaviour
         stats = GetComponent<PlayerStats>();
     }
 
->>>>>>> 4e59cdd1d5b6ce1640f7cb7fc37d4dd876a8d921
+
     public enum PlayerID { PlayerOne, PlayerTwo }
     public PlayerID playerID;
 
