@@ -9,78 +9,89 @@ public class AIOpponent : MonoBehaviour
     public float shootCooldown = 2f;
     public float shootRange = 3f;
     public float moveSpeed = 2f;
-    private bool facingRight = true; 
 
+    private bool facingRight = true;
     private float shootTimer = 0f;
     private Rigidbody2D rb;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();  // Grab the Rigidbody2D on start
+        rb = GetComponent<Rigidbody2D>();
+
+        if (player != null)
+        {
+            float dx = player.position.x - transform.position.x;
+
+            // Ensure correct initial facing
+            if ((dx < 0 && facingRight) || (dx > 0 && !facingRight))
+            {
+                Flip();
+            }
+        }
     }
+
 
     void Update()
     {
         if (player == null) return;
 
+        float dx = player.position.x - transform.position.x;
         float distance = Vector2.Distance(transform.position, player.position);
 
-        // Determine movement direction
-        float moveDirection = player.position.x - transform.position.x;
-
-        // Flip if necessary
-        if (moveDirection > 0 && !facingRight)
+        // Flip only if distance is significant
+        if (Mathf.Abs(dx) > 0.1f)
         {
-            Flip();
-        }
-        else if (moveDirection < 0 && facingRight)
-        {
-            Flip();
+            if (dx > 0 && !facingRight)
+                Flip();
+            else if (dx < 0 && facingRight)
+                Flip();
         }
 
-        // Move towards player
-        if (distance > 1f)
+        // Smooth movement
+        if (Mathf.Abs(dx) > 0.2f && distance > 1f)
         {
-            rb.velocity = new Vector2(Mathf.Sign(moveDirection) * moveSpeed, rb.velocity.y);
+            float move = Mathf.Sign(dx) * moveSpeed;
+            rb.linearVelocity = new Vector2(move, rb.linearVelocity.y);
         }
         else
         {
-            rb.velocity = new Vector2(0, rb.velocity.y);
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         }
 
-        // Shooting logic
+        // Shoot if close enough
         shootTimer -= Time.deltaTime;
-
-        if (distance <= shootRange)
+        if (distance <= shootRange && shootTimer <= 0f)
         {
-            if (shootTimer <= 0f)
-            {
-                Vector2 shootDir = (player.position - transform.position).normalized;
-                Shoot(shootDir);
-                shootTimer = shootCooldown;
-            }
+            Shoot();
+            shootTimer = shootCooldown;
         }
     }
 
     void Flip()
     {
         facingRight = !facingRight;
-        Vector3 scaler = transform.localScale;
-        scaler.x *= -1;
-        transform.localScale = scaler;
-    }
-    void Shoot(Vector2 direction)
-    {
-        // Only use horizontal direction
-        direction = new Vector2(Mathf.Sign(direction.x), 0f);  // Keep only X direction (left or right)
 
-        Vector2 spawnPosition = (Vector2)firePoint.position + direction.normalized * 0.5f;
+        // Flip the scale on X
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
+
+        // Optional: Debug to see flip is called
+        Debug.Log("Flipped. Now facingRight = " + facingRight);
+    }
+
+    void Shoot()
+    {
+        Vector2 direction = facingRight ? Vector2.right : Vector2.left;
+        Vector2 spawnPosition = (Vector2)firePoint.position + direction * 0.5f;
 
         GameObject fireball = Instantiate(fireballPrefab, spawnPosition, Quaternion.identity);
-        Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
-        if (rb != null)
+        Rigidbody2D fireballRb = fireball.GetComponent<Rigidbody2D>();
+        if (fireballRb != null)
         {
-            rb.linearVelocity = direction.normalized * fireballSpeed;
+            fireballRb.linearVelocity = direction * fireballSpeed;
         }
+
+        Debug.Log("Shot fireball in direction: " + direction);
     }
 }

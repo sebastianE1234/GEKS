@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Westley Idle 1_0: 8113229626174206122
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
