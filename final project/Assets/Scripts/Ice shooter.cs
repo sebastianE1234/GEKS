@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class iceshooter : MonoBehaviour
 {
-    public PlayerStats stats;
+   
     public GameObject FireballPrefab;  // Drag your Fireball prefab here
     public Transform firePoint;        // Where the fireball spawns
     public float fireballSpeed = 10f; // Speed of the fireball
 
     void Start()
     {
-        stats = GetComponent<PlayerStats>();
+        
     }
 
     public enum PlayerID { PlayerOne, PlayerTwo }
@@ -20,13 +20,15 @@ public class iceshooter : MonoBehaviour
     {
         if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.B))
 
-            if (stats.ammo > 0)
+            
             {
                 Shoot(Vector2.right);
-                stats.UseAmmo();
-                Debug.Log("Shot fired! Ammo left;" + stats.ammo);
+               
             }
-
+        if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.V))
+        {
+            Shoot(Vector2.left);
+        }
     }
 
 
