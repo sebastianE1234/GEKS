@@ -9,7 +9,7 @@ public class icecollision : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("AI"))
         {
             // Call the DamagePopup to show the damage when the fireball hits the player
             Vector3 hitPosition = collision.transform.position + Vector3.up * 1.5f; // Slightly above the player
@@ -25,7 +25,7 @@ public class icecollision : MonoBehaviour
 
             if (playerHealth != null)
             {
-                Debug.Log("hit player");
+                Debug.Log("hit ai");
             }
             Destroy(gameObject);
 

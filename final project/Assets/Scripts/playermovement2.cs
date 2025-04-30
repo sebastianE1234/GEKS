@@ -37,10 +37,10 @@ public class playermovement2 : MonoBehaviour
         {
 
 
-            if (Input.GetKey(KeyCode.LeftArrow)) moveInput = -1f;
-            if (Input.GetKey(KeyCode.RightArrow)) moveInput = 1f;
+            if (Input.GetKey(KeyCode.A)) moveInput = -1f;
+            if (Input.GetKey(KeyCode.D)) moveInput = 1f;
 
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
@@ -51,9 +51,9 @@ public class playermovement2 : MonoBehaviour
 
 
 
-            if (Input.GetKey(KeyCode.A)) moveInput = -1f;
-            if (Input.GetKey(KeyCode.D)) moveInput = 1f;
-            if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKey(KeyCode.LeftArrow)) moveInput = 1f;
+            if (Input.GetKey(KeyCode.RightArrow)) moveInput = -1f;
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
