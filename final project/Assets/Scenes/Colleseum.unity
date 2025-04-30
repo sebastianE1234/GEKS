@@ -372,7 +372,7 @@ Animator:
   m_GameObject: {fileID: 346537019}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 89aded8de04f643cc8e4c8c8742e79b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 822d79eeca95c4d16bb0e928674cc892, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -798,6 +798,10 @@ PrefabInstance:
       propertyPath: FireballPrefab
       value: 
       objectReference: {fileID: 7538383538248400851, guid: 1114687e852374b3ab0b8e5dce12a16a, type: 3}
+    - target: {fileID: 8722829843376681332, guid: 0ba7427961ae14593a0ad3cca019f38d, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9106077579959411568, guid: 0ba7427961ae14593a0ad3cca019f38d, type: 3}
       propertyPath: m_Name
       value: Westley

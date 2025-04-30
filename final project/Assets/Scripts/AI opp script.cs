@@ -41,11 +41,11 @@ public class AIOpponent : MonoBehaviour
         // Move towards player
         if (distance > 1f)
         {
-            rb.velocity = new Vector2(Mathf.Sign(moveDirection) * moveSpeed, rb.velocity.y);
+            rb.linearVelocity = new Vector2(Mathf.Sign(moveDirection) * moveSpeed, rb.linearVelocity.y);
         }
         else
         {
-            rb.velocity = new Vector2(0, rb.velocity.y);
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         }
 
         // Shooting logic
