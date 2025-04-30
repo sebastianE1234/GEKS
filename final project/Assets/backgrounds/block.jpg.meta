@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2cde556c3339c48a985962184f58886b
+guid: 5bc0a65014b8c438b97df1e232c21948
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4821426807500632393
-    second: Westley_Idle_2-removebg-preview_0
+      213: 5865670524570963042
+    second: block_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Westley_Idle_2-removebg-preview_0
+      name: block_0
       rect:
         serializedVersion: 2
-        x: 138
-        y: 93
-        width: 300
-        height: 377
+        x: 0
+        y: 0
+        width: 256
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 941fe9be22629e240800000000000000
-      internalID: 4821426807500632393
+      spriteID: 26c0882b34c076150800000000000000
+      internalID: 5865670524570963042
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Westley_Idle_2-removebg-preview_0: 4821426807500632393
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

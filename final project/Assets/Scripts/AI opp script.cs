@@ -30,7 +30,6 @@ public class AIOpponent : MonoBehaviour
         }
     }
 
-
     void Update()
     {
         if (player == null) return;
@@ -38,7 +37,7 @@ public class AIOpponent : MonoBehaviour
         float dx = player.position.x - transform.position.x;
         float distance = Vector2.Distance(transform.position, player.position);
 
-        // Flip only if distance is significant
+        // Flip to face the player
         if (Mathf.Abs(dx) > 0.1f)
         {
             if (dx > 0 && !facingRight)
@@ -47,17 +46,18 @@ public class AIOpponent : MonoBehaviour
                 Flip();
         }
 
-        // Smooth movement
+        // Move toward the player
         if (Mathf.Abs(dx) > 0.2f && distance > 1f)
         {
-
+            Vector2 moveDir = new Vector2(dx, 0).normalized;
+            rb.linearVelocity = new Vector2(moveDir.x * moveSpeed, rb.linearVelocity.y);
         }
         else
         {
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         }
 
-        // Shoot if close enough
+        // Shoot if within range and cooldown passed
         shootTimer -= Time.deltaTime;
         if (distance <= shootRange && shootTimer <= 0f)
         {
@@ -70,22 +70,28 @@ public class AIOpponent : MonoBehaviour
     {
         facingRight = !facingRight;
 
-        // Flip the scale on X
+        // Flip the scale on X axis
         Vector3 localScale = transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
 
-        // Optional: Debug to see flip is called
         Debug.Log("Flipped. Now facingRight = " + facingRight);
     }
 
     void Shoot()
     {
+        if (fireballPrefab == null || firePoint == null)
+        {
+            Debug.LogWarning("Missing fireballPrefab or firePoint reference.");
+            return;
+        }
+
         Vector2 direction = facingRight ? Vector2.right : Vector2.left;
         Vector2 spawnPosition = (Vector2)firePoint.position + direction * 0.5f;
 
         GameObject fireball = Instantiate(fireballPrefab, spawnPosition, Quaternion.identity);
         Rigidbody2D fireballRb = fireball.GetComponent<Rigidbody2D>();
+
         if (fireballRb != null)
         {
             fireballRb.linearVelocity = direction * fireballSpeed;

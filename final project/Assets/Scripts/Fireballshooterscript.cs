@@ -12,7 +12,7 @@ public class SimpleFireballShooter : MonoBehaviour
 
     void Update()
     {
-        if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.B))
+        if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.E))
 
            
             {

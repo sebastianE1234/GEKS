@@ -3,28 +3,31 @@ using TMPro;
 
 public class Health : MonoBehaviour
 {
-    public TextMeshProUGUI gameOverText;
     public int health;
     public int maxHealth = 10;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public TextMeshProUGUI healthText;   // Assign this in the Inspector
+    public TextMeshProUGUI gameOverText; // Assign this in the Inspector
+
     void Start()
     {
-
         health = maxHealth;
         gameOverText.enabled = false;
+        UpdateHealthUI();
     }
 
-    // Update is called once per frame
-    void Update()
+    void UpdateHealthUI()
     {
-
+        if (healthText != null)
+        {
+            healthText.text = "Health: " + health;
+        }
     }
-
 
     public void TakeDamage(int amount)
     {
         health -= amount;
+        UpdateHealthUI();
 
         if (health <= 0)
         {
@@ -34,5 +37,3 @@ public class Health : MonoBehaviour
         }
     }
 }
-
-  

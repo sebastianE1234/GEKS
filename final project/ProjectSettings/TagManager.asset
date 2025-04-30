@@ -11,6 +11,7 @@ TagManager:
   - player
   - Enemy
   - AI
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Background
   - Player11
   - Player22
-  - 
+  - fireball
   - 
   - 
   - 

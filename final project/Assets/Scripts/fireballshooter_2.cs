@@ -16,7 +16,7 @@ public class fireballshooter_2 : MonoBehaviour
     void Update()
     {
 
-        if (playerID == PlayerID.PlayerTwo && Input.GetKeyDown(KeyCode.Space))
+        if (playerID == PlayerID.PlayerTwo && Input.GetKeyDown(KeyCode.L))
         {
 
             Shoot(Vector2.left);

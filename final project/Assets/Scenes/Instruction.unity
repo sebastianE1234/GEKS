@@ -477,7 +477,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 391, y: 56}
+  m_AnchoredPosition: {x: 304, y: 168}
   m_SizeDelta: {x: 141.2514, y: 53.7172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1014123072
@@ -500,15 +500,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '*If you are wanda, WASD movement B to shoot
+  m_text: '*If you are wanda, WASD movement E to shoot, and Q to block
 
 
-    *If you are westley,
-    left right up arrow and space to shoot
+    *If
+    you are westley, Left,Right, and Up to move, L to shoot, and P to block
 
 
-    *If you are cupid, WASD movement
-    B to shoot to the right, V to shoot to the left'
+    *If
+    you are cupid, WASD movement B to shoot to the right, V to shoot to the left
+
+
+    **
+    The block ability has a 15 second cool down to prevent spamming, have fun players!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -894,7 +898,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 245}
+  m_AnchoredPosition: {x: 0, y: 286}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1531621950

@@ -5,7 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Colleseum"); // Replace with the name of your main game scene
+        SceneManager.LoadScene("The Town"); // Replace with the name of your main game scene
     }
 
     public void QuitGame()
