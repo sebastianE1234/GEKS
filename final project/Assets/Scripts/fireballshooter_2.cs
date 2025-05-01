@@ -1,35 +1,32 @@
-using System;
 using UnityEngine;
-
 
 public class fireballshooter_2 : MonoBehaviour
 {
-    public GameObject FireballPrefab;  // Drag your Fireball prefab here
-    public Transform firePoint;        // Where the fireball spawns
-    public float fireballSpeed = 10f; // Speed of the fireball
-    public int damage = 10; // Amount of damage the fireball deals
-
-    // Update is called once per frame
+    public GameObject FireballPrefab;
+    public Transform firePoint; // Place this to the RIGHT of the player
+    public float fireballSpeed = 10f;
 
     public enum PlayerID { PlayerOne, PlayerTwo }
     public PlayerID playerID;
+
     void Update()
     {
-
-        if (playerID == PlayerID.PlayerTwo && Input.GetKeyDown(KeyCode.L))
+        if (playerID == PlayerID.PlayerTwo && Input.GetKeyDown(KeyCode.P))
         {
+            bool facingRight = transform.localScale.x > 0;
+            Vector2 shootDir = facingRight ? Vector2.left : Vector2.right;
 
-            Shoot(Vector2.left);
+            // Get correct offset regardless of facing
+            float offset = Mathf.Abs(firePoint.localPosition.x);
+            Vector3 spawnPos = transform.position + new Vector3(facingRight ? offset : -offset, firePoint.localPosition.y, 0);
+
+            Shoot(shootDir, spawnPos);
         }
     }
 
-    void Shoot(Vector2 direction)
+    void Shoot(Vector2 direction, Vector3 spawnPosition)
     {
-        Vector3 spawnOffset = new Vector3(-0.5f, 0f, 0f); // offset in local space
-        Vector3 spawnPosition = firePoint.position + firePoint.TransformDirection(spawnOffset);
-
         GameObject fireball = Instantiate(FireballPrefab, spawnPosition, Quaternion.identity);
-
         Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
         if (rb != null)
         {

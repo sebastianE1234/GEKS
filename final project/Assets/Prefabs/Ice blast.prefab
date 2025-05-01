@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: -3807974127042238862}
   - component: {fileID: 2140654880933820566}
   - component: {fileID: -124884126791954526}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Ice blast
-  m_TagString: Untagged
+  m_TagString: Ice blast
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,4 +179,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24c37479748449268d65b05128a96ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 0
+  damage: 20
