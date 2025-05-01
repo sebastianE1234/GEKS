@@ -9,7 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public bool isPlayer = true; // Set this in the Inspector per player
 
     private Rigidbody2D rb;
-    private bool isGrounded;
+    private bool isGrounded;  
+  
 
     void Start()
     {
@@ -26,10 +27,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-
-
-
-
         float moveInput = 0f;
 
 

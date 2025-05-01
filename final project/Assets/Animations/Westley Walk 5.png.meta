@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b40faae33a64c44ccad0f82e3aaebdc1
+guid: 914f3072d3a2549f49ae53f6a4892cb2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1772237579605544956
-    second: Untitled209_20250430131712_0
+      213: -2404160186804297701
+    second: Westley Walk 5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled209_20250430131712_0
+      name: Westley Walk 5_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2560
-        height: 1440
+        x: 125
+        y: 83
+        width: 308
+        height: 388
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4007302af4fb767e0800000000000000
-      internalID: -1772237579605544956
+      spriteID: b10a4624c05b2aed0800000000000000
+      internalID: -2404160186804297701
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Untitled209_20250430131712_0: -1772237579605544956
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
