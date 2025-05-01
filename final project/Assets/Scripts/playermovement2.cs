@@ -10,33 +10,25 @@ public class playermovement2 : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool isGrounded;
+    private bool facingRight = true;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
     }
 
     void FixedUpdate()
     {
         // Ground Check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-
     }
 
     void Update()
     {
-
-
-
-
         float moveInput = 0f;
-
 
         if (isPlayer)
         {
-
-
             if (Input.GetKey(KeyCode.A)) moveInput = -1f;
             if (Input.GetKey(KeyCode.D)) moveInput = 1f;
 
@@ -44,15 +36,12 @@ public class playermovement2 : MonoBehaviour
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
-
         }
         else
         {
-
-
-
             if (Input.GetKey(KeyCode.LeftArrow)) moveInput = 1f;
             if (Input.GetKey(KeyCode.RightArrow)) moveInput = -1f;
+
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -62,12 +51,22 @@ public class playermovement2 : MonoBehaviour
         // Horizontal Movement
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
-        // Jumping
-
-
-
-
-
+        // Flip the character based on direction
+        if (moveInput > 0 && !facingRight)
+        {
+            Flip();
+        }
+        else if (moveInput < 0 && facingRight)
+        {
+            Flip();
+        }
     }
 
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+    }
 }

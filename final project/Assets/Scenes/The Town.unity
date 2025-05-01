@@ -322,7 +322,6 @@ MonoBehaviour:
   FireballPrefab: {fileID: 7538383538248400851, guid: 1114687e852374b3ab0b8e5dce12a16a, type: 3}
   firePoint: {fileID: 346537023}
   fireballSpeed: 10
-  damage: 10
   playerID: 1
 --- !u!50 &346537025
 Rigidbody2D:
@@ -436,7 +435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockPrefab: {fileID: 6113055222531004611, guid: 27b756a7a483e4ecfbd4c56e129fac84, type: 3}
   blockSpawnPoint: {fileID: 381390368}
-  blockKey: 112
+  blockKey: 127
 --- !u!1 &381390367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,10 +1591,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9106077579959411568, guid: 0ba7427961ae14593a0ad3cca019f38d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 346537024}
+      addedObject: {fileID: 346537025}
     - targetCorrespondingSourceObject: {fileID: 9106077579959411568, guid: 0ba7427961ae14593a0ad3cca019f38d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 346537025}
+      addedObject: {fileID: 346537024}
     - targetCorrespondingSourceObject: {fileID: 9106077579959411568, guid: 0ba7427961ae14593a0ad3cca019f38d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 346537026}
@@ -1740,8 +1739,8 @@ Transform:
   m_GameObject: {fileID: 1862250557}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.4869, y: -2.4882, z: 0}
-  m_LocalScale: {x: 11.975275, y: 0.5387692, z: 1}
+  m_LocalPosition: {x: -7.17, y: -2.4882, z: 0}
+  m_LocalScale: {x: 9.994564, y: 0.5387692, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

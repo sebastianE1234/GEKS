@@ -12,6 +12,8 @@ TagManager:
   - Enemy
   - AI
   - Wall
+  - fire arrow
+  - Ice blast
   layers:
   - Default
   - TransparentFX
@@ -30,10 +32,10 @@ TagManager:
   - Player11
   - Player22
   - fireball
-  - 
-  - 
-  - 
-  - 
+  - Ai
+  - Fire arrow
+  - Ice blast
+  - cupid
   - 
   - 
   - 
