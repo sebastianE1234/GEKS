@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -34,6 +35,8 @@ public class Health : MonoBehaviour
             Debug.Log("Game Over!");
             Destroy(gameObject);
             gameOverText.enabled = true;
+
+            SceneManager.LoadScene("Enchanted Forest");
         }
     }
 }
