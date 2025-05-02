@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class cupidshooter : MonoBehaviour
+public class heliosshooter : MonoBehaviour
 {
-    public GameObject iceBlast;
+    public GameObject fireArrow;
     public float fireballSpeed = 10f;
 
     public float fireOffsetX = 1f; // Distance to left/right of player
@@ -16,7 +16,7 @@ public class cupidshooter : MonoBehaviour
 
     void Update()
     {
-        if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.Q))
+        if (playerID == PlayerID.PlayerTwo && Input.GetKeyDown(KeyCode.L))
         {
             // Check cooldown
             if (Time.time - lastShotTime >= cooldownTime)
@@ -35,7 +35,7 @@ public class cupidshooter : MonoBehaviour
 
     void Shoot(Vector2 direction, Vector3 spawnPosition)
     {
-        GameObject fireball = Instantiate(iceBlast, spawnPosition, Quaternion.identity);
+        GameObject fireball = Instantiate(fireArrow, spawnPosition, Quaternion.identity);
         Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
