@@ -306,7 +306,6 @@ MonoBehaviour:
   FireballPrefab: {fileID: 7538383538248400851, guid: 1114687e852374b3ab0b8e5dce12a16a, type: 3}
   firePoint: {fileID: 346537023}
   fireballSpeed: 10
-  damage: 10
   playerID: 1
 --- !u!50 &346537025
 Rigidbody2D:

@@ -9,8 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public bool isPlayer = true; // Set this in the Inspector per player
 
     private Rigidbody2D rb;
-    private bool isGrounded;  
-  
+    private bool isGrounded;
+
 
     void Start()
     {
@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Ground Check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        
+
     }
 
     void Update()
@@ -34,10 +34,10 @@ public class PlayerMovement : MonoBehaviour
         {
 
 
-            if (Input.GetKey(KeyCode.LeftArrow)) moveInput = -1f;
-            if (Input.GetKey(KeyCode.RightArrow)) moveInput = 1f;
+            if (Input.GetKey(KeyCode.A)) moveInput = -1f;
+            if (Input.GetKey(KeyCode.D)) moveInput = 1f;
 
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
@@ -45,12 +45,10 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            
-           
+            if (Input.GetKey(KeyCode.LeftArrow)) moveInput = 1f;
+            if (Input.GetKey(KeyCode.RightArrow)) moveInput = -1f;
 
-            if (Input.GetKey(KeyCode.A)) moveInput = 1f;
-            if (Input.GetKey(KeyCode.D)) moveInput = -1f;
-            if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
@@ -66,6 +64,5 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
-    
+
 }
-     
