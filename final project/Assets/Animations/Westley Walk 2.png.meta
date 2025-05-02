@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Westley Walk 2_0: -5172656089053303544
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
