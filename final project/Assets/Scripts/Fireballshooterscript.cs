@@ -1,25 +1,34 @@
 using UnityEngine;
 
-public class SimpleFireballShooter : MonoBehaviour
+public class fireballshooter : MonoBehaviour
 {
-    public GameObject FireballPrefab;  // Fireball prefab
-    public Transform firePoint;        // Child empty GameObject placed in front of the player when facing right
+    public GameObject FireballPrefab;
     public float fireballSpeed = 10f;
+
+    public float fireOffsetX = 1f; // Distance to left/right of player
+    public float fireOffsetY = 0.5f; // Height of the fireball
+    public float cooldownTime = 0.5f; // Cooldown duration in seconds
+
+    private float lastShotTime = -Mathf.Infinity; // Track last shot time
 
     public enum PlayerID { PlayerOne, PlayerTwo }
     public PlayerID playerID;
 
     void Update()
     {
-        if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.E))
+        if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.V))
         {
-            Vector2 shootDir = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
+            if (Time.time - lastShotTime >= cooldownTime)
+            {
+                bool facingRight = transform.localScale.x > 0;
 
-            // Flip the firePoint position based on facing
-            Vector3 spawnPos = firePoint.position;
-            spawnPos.x = transform.position.x + (shootDir.x * Mathf.Abs(firePoint.localPosition.x));
+                Vector2 shootDir = facingRight ? Vector2.right : Vector2.left;
+                Vector3 spawnOffset = new Vector3(facingRight ? fireOffsetX : -fireOffsetX, fireOffsetY, 0f);
+                Vector3 spawnPos = transform.position + spawnOffset;
 
-            Shoot(shootDir, spawnPos);
+                Shoot(shootDir, spawnPos);
+                lastShotTime = Time.time; // Reset cooldown
+            }
         }
     }
 
