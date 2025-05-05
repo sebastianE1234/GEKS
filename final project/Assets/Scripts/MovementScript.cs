@@ -36,7 +36,7 @@ public class playermovement3 : MonoBehaviour
             if (Input.GetKey(KeyCode.D)) moveInput = 1f;
 
             // Jump input
-            if (Input.GetKeyDown(KeyCode.W) && isGrounded)
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 animator.SetBool("isJumping", true); // Set jumping animation
@@ -49,7 +49,7 @@ public class playermovement3 : MonoBehaviour
             if (Input.GetKey(KeyCode.RightArrow)) moveInput = 1f;
 
             // Jump input
-            if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 animator.SetBool("isJumping", true); // Set jumping animation
