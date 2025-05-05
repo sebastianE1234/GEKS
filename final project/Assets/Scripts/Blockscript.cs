@@ -5,9 +5,12 @@ public class Block : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         // Destroy the block on collision with the fireball
-        if (collision.gameObject.CompareTag("Fireball"))
+        if (collision.gameObject.tag == "Fireball")
         {
-            Destroy(gameObject); // Destroy this block
+            Destroy(gameObject);
+
         }
+
+
     }
 }

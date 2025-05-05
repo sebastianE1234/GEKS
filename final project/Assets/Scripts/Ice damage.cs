@@ -32,7 +32,7 @@ public class icecollision : MonoBehaviour
             Destroy(gameObject);           // Destroy the fireball
         }
 
-        if (collision.gameObject.CompareTag("P2"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             Health playerHealth = collision.gameObject.GetComponent<Health>();
 

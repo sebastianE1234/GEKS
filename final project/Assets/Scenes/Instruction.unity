@@ -511,8 +511,12 @@ MonoBehaviour:
     you are cupid, WASD movement B to shoot to the right, V to shoot to the left
 
 
-    **
-    The block ability has a 15 second cool down to prevent spamming, have fun players!'
+    *
+    click enchanted forrest to move on
+
+
+    ** The block ability has a 15 second
+    cool down to prevent spamming, have fun players!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

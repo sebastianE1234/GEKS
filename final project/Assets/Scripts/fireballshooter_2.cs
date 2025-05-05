@@ -21,7 +21,7 @@ public class fireballshooter_2 : MonoBehaviour
             // Check cooldown
             if (Time.time - lastShotTime >= cooldownTime)
             {
-                bool facingRight = transform.localScale.x < 0;
+                bool facingRight = transform.localScale.x > 0;
 
                 Vector2 shootDir = facingRight ? Vector2.right : Vector2.left;
                 Vector3 spawnOffset = new Vector3(facingRight ? fireOffsetX : -fireOffsetX, fireOffsetY, 0f);

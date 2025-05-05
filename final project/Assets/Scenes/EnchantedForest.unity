@@ -411,7 +411,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
-  isPlayer: 0
+  usesArrows: 1
 --- !u!114 &91056364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,7 +474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockPrefab: {fileID: 6113055222531004611, guid: 27b756a7a483e4ecfbd4c56e129fac84, type: 3}
   blockSpawnPoint: {fileID: 542399493}
-  blockKey: 112
+  blockKey: 48
 --- !u!1 &276443299
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,7 +2295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockPrefab: {fileID: 6113055222531004611, guid: 27b756a7a483e4ecfbd4c56e129fac84, type: 3}
   blockSpawnPoint: {fileID: 1492065595}
-  blockKey: 122
+  blockKey: 49
 --- !u!114 &2108156691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2376,7 +2376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2464284632292778095, guid: b7a1167cd09094c7185a341ef4f92455, type: 3}
       propertyPath: m_TagString
-      value: P2
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5352543935766122471, guid: b7a1167cd09094c7185a341ef4f92455, type: 3}
       propertyPath: firePoint

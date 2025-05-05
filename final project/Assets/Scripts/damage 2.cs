@@ -29,6 +29,13 @@ public class damage2 : MonoBehaviour
 
             playerHealth.TakeDamage(damage);
 
+
+        }
+
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            Destroy(collision.gameObject); // Destroy the wall
+            Destroy(gameObject);           // Destroy the fireball
         }
 
     }

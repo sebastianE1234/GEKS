@@ -16,7 +16,7 @@ public class fireballshooter : MonoBehaviour
 
     void Update()
     {
-        if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.V))
+        if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.Alpha2))
         {
             if (Time.time - lastShotTime >= cooldownTime)
             {

@@ -6,11 +6,18 @@ public class heliosmovement : MonoBehaviour
     public float jumpForce = 7f;
     public Transform groundCheck;
     public LayerMask groundLayer;
-    public bool isPlayer = true; // Set this in the Inspector per player
+    public bool usesArrows = true; // true = use Arrow Keys, false = use A/D/W
 
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool facingRight = true;
+
+    // Custom linearVelocity property
+    public Vector2 linearVelocity
+    {
+        get => rb.linearVelocity;
+        set => rb.linearVelocity = value;
+    }
 
     void Start()
     {
@@ -19,7 +26,6 @@ public class heliosmovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Ground Check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
@@ -27,31 +33,21 @@ public class heliosmovement : MonoBehaviour
     {
         float moveInput = 0f;
 
-        if (isPlayer)
-        {
-            if (Input.GetKey(KeyCode.A)) moveInput = -1f;
-            if (Input.GetKey(KeyCode.D)) moveInput = 1f;
-
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            }
-        }
-        else
+        if (usesArrows)
         {
             if (Input.GetKey(KeyCode.LeftArrow)) moveInput = -1f;
             if (Input.GetKey(KeyCode.RightArrow)) moveInput = 1f;
-
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                linearVelocity = new Vector2(linearVelocity.x, jumpForce);
             }
         }
+        
 
-        // Horizontal Movement
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        // Horizontal movement
+        linearVelocity = new Vector2(moveInput * moveSpeed, linearVelocity.y);
 
-        // Flip the character based on direction
+        // Flip the character
         if (moveInput > 0 && !facingRight)
         {
             Flip();

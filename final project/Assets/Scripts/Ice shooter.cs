@@ -16,7 +16,7 @@ public class cupidshooter : MonoBehaviour
 
     void Update()
     {
-        if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.Q))
+        if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.Alpha2))
         {
             // Check cooldown
             if (Time.time - lastShotTime >= cooldownTime)
