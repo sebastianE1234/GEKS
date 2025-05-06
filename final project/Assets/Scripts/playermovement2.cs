@@ -4,12 +4,9 @@ public class playermovement2 : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float jumpForce = 7f;
-    public Transform groundCheck;
-    public LayerMask groundLayer;
     public bool isPlayer = true; // true = Player 1 (WASD), false = Player 2 (Arrows)
 
     private Rigidbody2D rb;
-    private bool isGrounded;
     private Animator animator;
     private bool facingRight = true;
 
@@ -17,12 +14,6 @@ public class playermovement2 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-    }
-
-    void FixedUpdate()
-    {
-        // Ground check
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
     void Update()
@@ -40,13 +31,25 @@ public class playermovement2 : MonoBehaviour
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
         }
-        // Player 2 controls (Arrow keys)
-        
+        else
+        {
+            // Player 2 controls (Arrow keys)
+            if (Input.GetKey(KeyCode.LeftArrow)) moveInput = -1f;
+            if (Input.GetKey(KeyCode.RightArrow)) moveInput = 1f;
+
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            }
+        }
+
         // Horizontal movement
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
-        // Update animation
-        
+        // Update animation parameters
+        animator.SetBool("isWalking", Mathf.Abs(moveInput) > 0.01f);
+        animator.SetBool("isJumping", rb.linearVelocity.y > 0.1f || rb.linearVelocity.y < -0.1f);
+
         // Flip character direction
         if (moveInput > 0 && !facingRight)
         {
