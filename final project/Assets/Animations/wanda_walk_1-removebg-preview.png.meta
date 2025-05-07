@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wanda_walk_1-removebg-preview_0: 7150295199161665317
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
