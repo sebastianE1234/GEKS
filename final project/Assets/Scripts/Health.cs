@@ -7,28 +7,36 @@ public class Health : MonoBehaviour
     public int health;
     public int maxHealth = 10;
 
-    public TextMeshProUGUI healthText;   // Assign in Inspector
-    public TextMeshProUGUI gameOverText; // Assign in Inspector
-    public Animator animator;            // Assign in Inspector
-
-    public Health enemyHealth;           // Assign the enemy's Health script in Inspector
+    public TextMeshProUGUI healthText;   // Only needed for player
+    public TextMeshProUGUI gameOverText; // Only needed for player
+    public Animator animator;
 
     private bool isDead = false;
 
     void Start()
     {
         health = maxHealth;
-        gameOverText.enabled = false;
+
+        if (CompareTag("player") && gameOverText != null)
+            gameOverText.enabled = false;
+
         UpdateHealthUI();
     }
 
     void UpdateHealthUI()
     {
-        if (healthText != null)
+        if (CompareTag("player") && healthText != null)
+        {
+            healthText.text = "Health: " + health;
+        }
+
+        if (CompareTag("Enemy") && healthText != null)
         {
             healthText.text = "Health: " + health;
         }
     }
+
+
 
     public void TakeDamage(int amount)
     {
@@ -40,36 +48,46 @@ public class Health : MonoBehaviour
         if (health <= 0)
         {
             isDead = true;
-            Debug.Log("Game Over!");
-            gameOverText.enabled = true;
 
-            if (animator != null)
+            if (CompareTag("player"))
             {
-                animator.SetTrigger("dead"); // Trigger "Dead" animation
-            }
+                Debug.Log("Player Died! Game Over!");
+                if (gameOverText != null)
+                    gameOverText.enabled = true;
 
-            StartCoroutine(HandleDeath());
-        }
-        else
-        {
-            CheckForWinCondition();
+                if (animator != null)
+                    animator.SetTrigger("dead");
+
+                StartCoroutine(HandleDeath());
+            }
+            else if (CompareTag("Enemy"))
+            {
+                Debug.Log("Enemy Died!");
+                if (animator != null)
+                    animator.SetTrigger("Death");
+
+                CheckForWinCondition(); // Let the player win if enemy is dead
+            }
         }
     }
 
     void CheckForWinCondition()
     {
-        Debug.Log($"Checking win condition. Player health: {health}, Enemy health: {(enemyHealth != null ? enemyHealth.health : -1)}");
-
-        if (health > 1 && enemyHealth != null && enemyHealth.health <= 0)
+        GameObject player = GameObject.FindGameObjectWithTag("player");
+        if (player != null)
         {
-            Debug.Log("You Win!");
-            if (animator != null)
+            Health playerHealth = player.GetComponent<Health>();
+            if (playerHealth != null && !playerHealth.isDead)
             {
-                animator.SetTrigger("win");
+                Animator playerAnim = playerHealth.animator;
+                if (playerAnim != null)
+                {
+                    Debug.Log("Player Wins!");
+                    playerAnim.SetTrigger("win");
+                }
             }
         }
     }
-
 
     private System.Collections.IEnumerator HandleDeath()
     {
@@ -77,4 +95,3 @@ public class Health : MonoBehaviour
         SceneManager.LoadScene("Enchanted Forest");
     }
 }
-

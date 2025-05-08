@@ -145,6 +145,7 @@ MonoBehaviour:
   maxHealth: 100
   healthText: {fileID: 1130245849}
   gameOverText: {fileID: 1979216536}
+  animator: {fileID: 26975535}
 --- !u!114 &26975517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -750,6 +751,7 @@ MonoBehaviour:
   maxHealth: 100
   healthText: {fileID: 2120658762}
   gameOverText: {fileID: 1979216536}
+  animator: {fileID: 346537031}
 --- !u!114 &346537030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,7 +918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -551, y: 364}
+  m_AnchoredPosition: {x: -551, y: 328}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1130245849
@@ -1102,7 +1104,7 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
@@ -1122,7 +1124,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 67.1
+  field of view: 62.50674
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1381,6 +1383,10 @@ PrefabInstance:
       propertyPath: firePointLeft
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8888445639725352546, guid: c818a693b768a4cef8a3d30da377243c, type: 3}
+      propertyPath: FireballPrefab
+      value: 
+      objectReference: {fileID: 3272525812589873083, guid: 3fbd90940c8bb49f1b775022625d675f, type: 3}
     - target: {fileID: 8888445639725352546, guid: c818a693b768a4cef8a3d30da377243c, type: 3}
       propertyPath: firePointRight
       value: 
@@ -2480,7 +2486,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 555, y: 366}
+  m_AnchoredPosition: {x: 555, y: 328}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2120658762

@@ -1,0 +1,3142 @@
+fileFormatVersion: 2
+guid: df473f5ce45724d52a94ce6b740086bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8778223611780164782
+    second: wind_attack-removebg-preview_0
+  - first:
+      213: 919130050974258208
+    second: wind_attack-removebg-preview_1
+  - first:
+      213: -802563234470088082
+    second: wind_attack-removebg-preview_2
+  - first:
+      213: -3906521763771321827
+    second: wind_attack-removebg-preview_3
+  - first:
+      213: -621059457810448003
+    second: wind_attack-removebg-preview_4
+  - first:
+      213: 8068046543518372938
+    second: wind_attack-removebg-preview_5
+  - first:
+      213: -2159896761298444161
+    second: wind_attack-removebg-preview_6
+  - first:
+      213: -7522116982737517520
+    second: wind_attack-removebg-preview_7
+  - first:
+      213: 3150704688592214037
+    second: wind_attack-removebg-preview_8
+  - first:
+      213: -1255180192669267742
+    second: wind_attack-removebg-preview_9
+  - first:
+      213: 34834647946395837
+    second: wind_attack-removebg-preview_10
+  - first:
+      213: 429999768185709398
+    second: wind_attack-removebg-preview_11
+  - first:
+      213: 6324724319437507415
+    second: wind_attack-removebg-preview_12
+  - first:
+      213: -522168589393472286
+    second: wind_attack-removebg-preview_13
+  - first:
+      213: 7227108657800389799
+    second: wind_attack-removebg-preview_14
+  - first:
+      213: -7864773910786736993
+    second: wind_attack-removebg-preview_15
+  - first:
+      213: 4836096874689042928
+    second: wind_attack-removebg-preview_16
+  - first:
+      213: 4446153092856403306
+    second: wind_attack-removebg-preview_17
+  - first:
+      213: -8646039113772764941
+    second: wind_attack-removebg-preview_18
+  - first:
+      213: 1010351864276491439
+    second: wind_attack-removebg-preview_19
+  - first:
+      213: 471169144644992737
+    second: wind_attack-removebg-preview_20
+  - first:
+      213: 9118001882583706159
+    second: wind_attack-removebg-preview_21
+  - first:
+      213: -1373560307220736065
+    second: wind_attack-removebg-preview_22
+  - first:
+      213: -8387059626741238056
+    second: wind_attack-removebg-preview_23
+  - first:
+      213: 228806698518589257
+    second: wind_attack-removebg-preview_24
+  - first:
+      213: 4030385502054039735
+    second: wind_attack-removebg-preview_25
+  - first:
+      213: 583032754541301895
+    second: wind_attack-removebg-preview_26
+  - first:
+      213: 1541025470379061362
+    second: wind_attack-removebg-preview_27
+  - first:
+      213: -147040899863714018
+    second: wind_attack-removebg-preview_28
+  - first:
+      213: -6011078285638032890
+    second: wind_attack-removebg-preview_29
+  - first:
+      213: 5140065045501118632
+    second: wind_attack-removebg-preview_30
+  - first:
+      213: -2708017499469095515
+    second: wind_attack-removebg-preview_31
+  - first:
+      213: 6305152735068040398
+    second: wind_attack-removebg-preview_32
+  - first:
+      213: -7661078548808213739
+    second: wind_attack-removebg-preview_33
+  - first:
+      213: 4607647261007844974
+    second: wind_attack-removebg-preview_34
+  - first:
+      213: -353689352738831717
+    second: wind_attack-removebg-preview_35
+  - first:
+      213: -2101265906673599102
+    second: wind_attack-removebg-preview_36
+  - first:
+      213: -6676527138064174601
+    second: wind_attack-removebg-preview_37
+  - first:
+      213: 676326933219219682
+    second: wind_attack-removebg-preview_38
+  - first:
+      213: 59402405517991178
+    second: wind_attack-removebg-preview_39
+  - first:
+      213: -2794350718083740307
+    second: wind_attack-removebg-preview_40
+  - first:
+      213: 4521681366659413217
+    second: wind_attack-removebg-preview_41
+  - first:
+      213: -7334842332923066868
+    second: wind_attack-removebg-preview_42
+  - first:
+      213: -2326628489013086518
+    second: wind_attack-removebg-preview_43
+  - first:
+      213: 6196896398365007761
+    second: wind_attack-removebg-preview_44
+  - first:
+      213: -1280056259690202448
+    second: wind_attack-removebg-preview_45
+  - first:
+      213: 5596376204155387208
+    second: wind_attack-removebg-preview_46
+  - first:
+      213: -6578521478028419280
+    second: wind_attack-removebg-preview_47
+  - first:
+      213: -3227107275036393794
+    second: wind_attack-removebg-preview_48
+  - first:
+      213: 8568986441296998890
+    second: wind_attack-removebg-preview_49
+  - first:
+      213: -5823139897605902288
+    second: wind_attack-removebg-preview_50
+  - first:
+      213: -8470045618745512602
+    second: wind_attack-removebg-preview_51
+  - first:
+      213: 8927616885725167822
+    second: wind_attack-removebg-preview_52
+  - first:
+      213: -934120670644821188
+    second: wind_attack-removebg-preview_53
+  - first:
+      213: -6122698646851895604
+    second: wind_attack-removebg-preview_54
+  - first:
+      213: -8483657715572375281
+    second: wind_attack-removebg-preview_55
+  - first:
+      213: 2960295059115066109
+    second: wind_attack-removebg-preview_56
+  - first:
+      213: 5253251128517554711
+    second: wind_attack-removebg-preview_57
+  - first:
+      213: 4020827275363668471
+    second: wind_attack-removebg-preview_58
+  - first:
+      213: 136972892339718661
+    second: wind_attack-removebg-preview_59
+  - first:
+      213: 6007011890671252160
+    second: wind_attack-removebg-preview_60
+  - first:
+      213: 3264633878174879852
+    second: wind_attack-removebg-preview_61
+  - first:
+      213: -1312440418244144694
+    second: wind_attack-removebg-preview_62
+  - first:
+      213: -657194636776405892
+    second: wind_attack-removebg-preview_63
+  - first:
+      213: 1784515173378930557
+    second: wind_attack-removebg-preview_64
+  - first:
+      213: -7131288140671665777
+    second: wind_attack-removebg-preview_65
+  - first:
+      213: 2319625151303624912
+    second: wind_attack-removebg-preview_66
+  - first:
+      213: 4434832537157290868
+    second: wind_attack-removebg-preview_67
+  - first:
+      213: 4047546119347922753
+    second: wind_attack-removebg-preview_68
+  - first:
+      213: 532579752163206569
+    second: wind_attack-removebg-preview_69
+  - first:
+      213: -5244602276164994055
+    second: wind_attack-removebg-preview_70
+  - first:
+      213: 2361031027839963148
+    second: wind_attack-removebg-preview_71
+  - first:
+      213: -4047740897456071387
+    second: wind_attack-removebg-preview_72
+  - first:
+      213: 1540783572938880683
+    second: wind_attack-removebg-preview_73
+  - first:
+      213: 5817497395794383276
+    second: wind_attack-removebg-preview_74
+  - first:
+      213: -1423122795072910966
+    second: wind_attack-removebg-preview_75
+  - first:
+      213: 5337248851161887115
+    second: wind_attack-removebg-preview_76
+  - first:
+      213: -4328701921877055982
+    second: wind_attack-removebg-preview_77
+  - first:
+      213: 1666679136900472470
+    second: wind_attack-removebg-preview_78
+  - first:
+      213: -1924691619288095061
+    second: wind_attack-removebg-preview_79
+  - first:
+      213: -7978932386478729321
+    second: wind_attack-removebg-preview_80
+  - first:
+      213: -2139148353787337421
+    second: wind_attack-removebg-preview_81
+  - first:
+      213: 3840051527355100317
+    second: wind_attack-removebg-preview_82
+  - first:
+      213: 1404798010593963174
+    second: wind_attack-removebg-preview_83
+  - first:
+      213: 8205885009660394642
+    second: wind_attack-removebg-preview_84
+  - first:
+      213: -5912473351549513358
+    second: wind_attack-removebg-preview_85
+  - first:
+      213: -251440239354823440
+    second: wind_attack-removebg-preview_86
+  - first:
+      213: 7662351929756586533
+    second: wind_attack-removebg-preview_87
+  - first:
+      213: -5331043063315446778
+    second: wind_attack-removebg-preview_88
+  - first:
+      213: 1653764898294396998
+    second: wind_attack-removebg-preview_89
+  - first:
+      213: -1135224427434751862
+    second: wind_attack-removebg-preview_90
+  - first:
+      213: 2093885189614261869
+    second: wind_attack-removebg-preview_91
+  - first:
+      213: 9058595540834714734
+    second: wind_attack-removebg-preview_92
+  - first:
+      213: -2911984452420094226
+    second: wind_attack-removebg-preview_93
+  - first:
+      213: 6208138165901116882
+    second: wind_attack-removebg-preview_94
+  - first:
+      213: -4888973852954471212
+    second: wind_attack-removebg-preview_95
+  - first:
+      213: -5792788821506647335
+    second: wind_attack-removebg-preview_96
+  - first:
+      213: 6689296404678874560
+    second: wind_attack-removebg-preview_97
+  - first:
+      213: -903929420608285830
+    second: wind_attack-removebg-preview_98
+  - first:
+      213: 5426226439016549624
+    second: wind_attack-removebg-preview_99
+  - first:
+      213: -4296554921557745629
+    second: wind_attack-removebg-preview_100
+  - first:
+      213: -5275768992160641538
+    second: wind_attack-removebg-preview_101
+  - first:
+      213: 6957794228041562365
+    second: wind_attack-removebg-preview_102
+  - first:
+      213: 7382411996016685282
+    second: wind_attack-removebg-preview_103
+  - first:
+      213: 1231377651901451070
+    second: wind_attack-removebg-preview_104
+  - first:
+      213: 544235135929351414
+    second: wind_attack-removebg-preview_105
+  - first:
+      213: -126334006622765859
+    second: wind_attack-removebg-preview_106
+  - first:
+      213: -6071740434471705091
+    second: wind_attack-removebg-preview_107
+  - first:
+      213: -8258473760096678459
+    second: wind_attack-removebg-preview_108
+  - first:
+      213: -4126217744754002451
+    second: wind_attack-removebg-preview_109
+  - first:
+      213: -402937550345372802
+    second: wind_attack-removebg-preview_110
+  - first:
+      213: 1451412482156482464
+    second: wind_attack-removebg-preview_111
+  - first:
+      213: 4996908850957082548
+    second: wind_attack-removebg-preview_112
+  - first:
+      213: 4642155034795390995
+    second: wind_attack-removebg-preview_113
+  - first:
+      213: -1112992988336715820
+    second: wind_attack-removebg-preview_114
+  - first:
+      213: 2180559595362207969
+    second: wind_attack-removebg-preview_115
+  - first:
+      213: 729328431442959662
+    second: wind_attack-removebg-preview_116
+  - first:
+      213: 6776231284146749802
+    second: wind_attack-removebg-preview_117
+  - first:
+      213: 8752808287807517217
+    second: wind_attack-removebg-preview_118
+  - first:
+      213: -3682451375217784617
+    second: wind_attack-removebg-preview_119
+  - first:
+      213: -2615762434917999709
+    second: wind_attack-removebg-preview_120
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac6a1badd382d970800000000000000
+      internalID: 8778223611780164782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 403
+        width: 31
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02415be59e761cc00800000000000000
+      internalID: 919130050974258208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 398
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e623f9b8df8bcd4f0800000000000000
+      internalID: -802563234470088082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 398
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12f31b472f39c9c0800000000000000
+      internalID: -3906521763771321827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 402
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71cfc0b6bd8167f0800000000000000
+      internalID: -621059457810448003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 394
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a441bb1c59577ff60800000000000000
+      internalID: 8068046543518372938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 386
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f702a47d6518602e0800000000000000
+      internalID: -2159896761298444161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 387
+        width: 38
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0344ff445721c9790800000000000000
+      internalID: -7522116982737517520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 394
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51852bb983d89bb20800000000000000
+      internalID: 3150704688592214037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 378
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e887d6d344b49ee0800000000000000
+      internalID: -1255180192669267742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 356
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db088b08de1cb7000800000000000000
+      internalID: 34834647946395837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 371
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653a53cc28aa7f500800000000000000
+      internalID: 429999768185709398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 379
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75bc85a324fe5c750800000000000000
+      internalID: 6324724319437507415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 377
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4d55c3f62e0c8f0800000000000000
+      internalID: -522168589393472286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 357
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4a75d8809db4460800000000000000
+      internalID: 7227108657800389799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 362
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9cfbc82cc5bad290800000000000000
+      internalID: -7864773910786736993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 361
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9973b1c744d1340800000000000000
+      internalID: 4836096874689042928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 362
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65d5b46ea8e3bd30800000000000000
+      internalID: 4446153092856403306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 362
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0f0751c39130880800000000000000
+      internalID: -8646039113772764941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 360
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac9a50eaad750e00800000000000000
+      internalID: 1010351864276491439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 347
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee70b737dde98600800000000000000
+      internalID: 471169144644992737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 350
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2aaeb82766a98e70800000000000000
+      internalID: 9118001882583706159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 343
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb718829d2220fce0800000000000000
+      internalID: -1373560307220736065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 331
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6711eb4bd2b9b80800000000000000
+      internalID: -8387059626741238056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 335
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f2e63ea72ec2300800000000000000
+      internalID: 228806698518589257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 340
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0c0dd924ecee730800000000000000
+      internalID: 4030385502054039735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 331
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7801ad28339571800800000000000000
+      internalID: 583032754541301895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 333
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270f5c72082d26510800000000000000
+      internalID: 1541025470379061362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 338
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e176b24a41b95fdf0800000000000000
+      internalID: -147040899863714018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 318
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6022b73b52c549ca0800000000000000
+      internalID: -6011078285638032890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 317
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a80f77fced255740800000000000000
+      internalID: 5140065045501118632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 324
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad5a929e603b6ad0800000000000000
+      internalID: -2708017499469095515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 320
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecc2054a107608750800000000000000
+      internalID: 6305152735068040398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 318
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51bdbe566a16ea590800000000000000
+      internalID: -7661078548808213739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 295
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e669ca285c6a1ff30800000000000000
+      internalID: 4607647261007844974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 313
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b920a295861771bf0800000000000000
+      internalID: -353689352738831717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 307
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28db4167acdc6d2e0800000000000000
+      internalID: -2101265906673599102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 306
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1fd6211f53853a0800000000000000
+      internalID: -6676527138064174601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 314
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e89f8e23cbc26900800000000000000
+      internalID: 676326933219219682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 295
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d14bf4c2a03d000800000000000000
+      internalID: 59402405517991178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 294
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6dc2c6b3d87839d0800000000000000
+      internalID: -2794350718083740307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_41
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 259
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4bc3ffe3d30ce30800000000000000
+      internalID: 4521681366659413217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_42
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 284
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c068f9682c7653a90800000000000000
+      internalID: -7334842332923066868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_43
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 255
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6321c57b726bfd0800000000000000
+      internalID: -2326628489013086518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_44
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 251
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f9176117ccff550800000000000000
+      internalID: 6196896398365007761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_45
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 241
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba76a42d935c3ee0800000000000000
+      internalID: -1280056259690202448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_46
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 230
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d712eb1825aad40800000000000000
+      internalID: 5596376204155387208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_47
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 227
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f96daf19564b4a0800000000000000
+      internalID: -6578521478028419280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_48
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 212
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe706308030733d0800000000000000
+      internalID: -3227107275036393794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_49
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 167
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae175a694c72be670800000000000000
+      internalID: 8568986441296998890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_50
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 154
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 030bbcd8d1d003fa0800000000000000
+      internalID: -5823139897605902288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_51
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 0
+        width: 122
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66de15fc26a547a80800000000000000
+      internalID: -8470045618745512602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_52
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 153
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec08d6cc14445eb70800000000000000
+      internalID: 8927616885725167822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_53
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 79
+        width: 92
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c33add003365903f0800000000000000
+      internalID: -934120670644821188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_54
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 134
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cceb0a7250ec70ba0800000000000000
+      internalID: -6122698646851895604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_55
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 127
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f018e4b814ef34a80800000000000000
+      internalID: -8483657715572375281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_56
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 117
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2c5e40ca4151920800000000000000
+      internalID: 2960295059115066109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_57
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 117
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7127537811c47e840800000000000000
+      internalID: 5253251128517554711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_58
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 108
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1d04b8a19dcc730800000000000000
+      internalID: 4020827275363668471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_59
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 75
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a44cfae10a6e100800000000000000
+      internalID: 136972892339718661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_60
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 117
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2f101fc713d5350800000000000000
+      internalID: 6007011890671252160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_61
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 114
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c60d156273f4e4d20800000000000000
+      internalID: 3264633878174879852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_62
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 113
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac151b9a46649cde0800000000000000
+      internalID: -1312440418244144694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_63
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 103
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7486a6b5fc21e6f0800000000000000
+      internalID: -657194636776405892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_64
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 110
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77bb8d681fd3c810800000000000000
+      internalID: 1784515173378930557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_65
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 107
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f893f402833980d90800000000000000
+      internalID: -7131288140671665777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_66
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 107
+        width: 34
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d8a38309c6f03020800000000000000
+      internalID: 2319625151303624912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_67
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 82
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47bca9f12b0bb8d30800000000000000
+      internalID: 4434832537157290868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_68
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 91
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1476ebf20c5cb2830800000000000000
+      internalID: 4047546119347922753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_69
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 96
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5e04e767a146700800000000000000
+      internalID: 532579752163206569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_70
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 75
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fbfaf4540e6737b0800000000000000
+      internalID: -5244602276164994055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_71
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 101
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c009316e53114c020800000000000000
+      internalID: 2361031027839963148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_72
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 97
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d5f40891983d7c0800000000000000
+      internalID: -4047740897456071387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_73
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 96
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba677c40f76f16510800000000000000
+      internalID: 1540783572938880683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_74
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 87
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1951e1f07ebb050800000000000000
+      internalID: 5817497395794383276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_75
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 96
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a890bef9b5d004ce0800000000000000
+      internalID: -1423122795072910966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_76
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 27
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81bd5b5d87b11a40800000000000000
+      internalID: 5337248851161887115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_77
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 75
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216a7f7598c5de3c0800000000000000
+      internalID: -4328701921877055982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_78
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 64
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ed18538db312710800000000000000
+      internalID: 1666679136900472470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_79
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 76
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba669227b2f1a45e0800000000000000
+      internalID: -1924691619288095061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_80
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 43
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7975319c443254190800000000000000
+      internalID: -7978932386478729321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_81
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 53
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335e4aae7e73052e0800000000000000
+      internalID: -2139148353787337421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_82
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 72
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c6237c48a9a4530800000000000000
+      internalID: 3840051527355100317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_83
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 70
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ace0a20958de7310800000000000000
+      internalID: 1404798010593963174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_84
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 75
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29cb28c80f821e170800000000000000
+      internalID: 8205885009660394642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_85
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 75
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2719de8ffcca2fda0800000000000000
+      internalID: -5912473351549513358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_86
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 64
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fc340b3f64b28cf0800000000000000
+      internalID: -251440239354823440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_87
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 75
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5229b25bb74265a60800000000000000
+      internalID: 7662351929756586533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_88
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 62
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604c5c834945406b0800000000000000
+      internalID: -5331043063315446778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_89
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 74
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648f8d8b96a53f610800000000000000
+      internalID: 1653764898294396998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_90
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 70
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88c76ed56fde30f0800000000000000
+      internalID: -1135224427434751862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_91
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 77
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d66d86f6c79fe0d10800000000000000
+      internalID: 2093885189614261869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_92
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 75
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64046f56a896bd70800000000000000
+      internalID: 9058595540834714734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_93
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 61
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee63a02a19d8697d0800000000000000
+      internalID: -2911984452420094226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_94
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 64
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5c41f05ccb72650800000000000000
+      internalID: 6208138165901116882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_95
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 59
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d4d9720f20e62cb0800000000000000
+      internalID: -4888973852954471212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_96
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 43
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da1e332241eb9fa0800000000000000
+      internalID: -5792788821506647335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_97
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 57
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c59e2e73a725dc50800000000000000
+      internalID: 6689296404678874560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_98
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 48
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a735e9e2bf89473f0800000000000000
+      internalID: -903929420608285830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_99
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 55
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc0a686234dd4b40800000000000000
+      internalID: 5426226439016549624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_100
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 50
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320289e10129f54c0800000000000000
+      internalID: -4296554921557745629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_101
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 55
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd8e39cd04b8c6b0800000000000000
+      internalID: -5275768992160641538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_102
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 52
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df83ea68cfc0f8060800000000000000
+      internalID: 6957794228041562365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_103
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 38
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e03820c898937660800000000000000
+      internalID: 7382411996016685282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_104
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 32
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3bc0f5437bb61110800000000000000
+      internalID: 1231377651901451070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_105
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 40
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcfa5ff8f28d8700800000000000000
+      internalID: 544235135929351414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_106
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 40
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddcb23ce3eb2f3ef0800000000000000
+      internalID: -126334006622765859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_107
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 34
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df520fa8e38dcbba0800000000000000
+      internalID: -6071740434471705091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_108
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 33
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd8d86ded1046d80800000000000000
+      internalID: -8258473760096678459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_109
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 40
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de53602a2dabcb6c0800000000000000
+      internalID: -4126217744754002451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_110
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 27
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b7ffcce6a786af0800000000000000
+      internalID: -402937550345372802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_111
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 0
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af418d66f3742410800000000000000
+      internalID: 1451412482156482464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_112
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 30
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf5d4c0026985540800000000000000
+      internalID: 4996908850957082548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_113
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 27
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3183541b86f3c6040800000000000000
+      internalID: 4642155034795390995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_114
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 25
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d780b426cadd80f0800000000000000
+      internalID: -1112992988336715820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_115
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 31
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8422d1667e24e10800000000000000
+      internalID: 2180559595362207969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_116
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 53
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d10c028581f1a00800000000000000
+      internalID: 729328431442959662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_117
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61c47f63720a0e50800000000000000
+      internalID: 6776231284146749802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_118
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 11
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122bcdd63c8387970800000000000000
+      internalID: 8752808287807517217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_119
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8ce751cfd45ecc0800000000000000
+      internalID: -3682451375217784617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_attack-removebg-preview_120
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 27
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3abd6e1ace1f2bbd0800000000000000
+      internalID: -2615762434917999709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
