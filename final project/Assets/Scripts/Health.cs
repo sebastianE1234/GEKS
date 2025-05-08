@@ -11,6 +11,8 @@ public class Health : MonoBehaviour
     public TextMeshProUGUI gameOverText; // Assign in Inspector
     public Animator animator;            // Assign in Inspector
 
+    public Health enemyHealth;           // Assign the enemy's Health script in Inspector
+
     private bool isDead = false;
 
     void Start()
@@ -46,16 +48,32 @@ public class Health : MonoBehaviour
                 animator.SetTrigger("dead"); // Trigger "Dead" animation
             }
 
-            // Start coroutine to delay scene load
             StartCoroutine(HandleDeath());
+        }
+        else
+        {
+            CheckForWinCondition();
         }
     }
 
+    void CheckForWinCondition()
+    {
+        Debug.Log($"Checking win condition. Player health: {health}, Enemy health: {(enemyHealth != null ? enemyHealth.health : -1)}");
+
+        if (health > 1 && enemyHealth != null && enemyHealth.health <= 0)
+        {
+            Debug.Log("You Win!");
+            if (animator != null)
+            {
+                animator.SetTrigger("win");
+            }
+        }
+    }
+
+
     private System.Collections.IEnumerator HandleDeath()
     {
-        // Wait for animation to play (adjust this duration to match your animation length)
         yield return new WaitForSeconds(2f);
-
         SceneManager.LoadScene("Enchanted Forest");
     }
 }
