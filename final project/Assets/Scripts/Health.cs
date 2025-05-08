@@ -7,6 +7,7 @@ public class Health : MonoBehaviour
     public int health;
     public int maxHealth = 10;
 
+
     void Start()
     {
         health = maxHealth;
@@ -37,7 +38,33 @@ public class Health : MonoBehaviour
 
             if (animator != null)
             {
+
+        }
+        else
+        {
+            CheckForWinCondition();
+        }
+    }
+
+    void CheckForWinCondition()
+    {
+        Debug.Log($"Checking win condition. Player health: {health}, Enemy health: {(enemyHealth != null ? enemyHealth.health : -1)}");
+
+        if (health > 1 && enemyHealth != null && enemyHealth.health <= 0)
+        {
+            Debug.Log("You Win!");
+            if (animator != null)
+            {
+                animator.SetTrigger("win");
             }
         }
     }
+
+
+    private System.Collections.IEnumerator HandleDeath()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("Enchanted Forest");
+    }
 }
+
