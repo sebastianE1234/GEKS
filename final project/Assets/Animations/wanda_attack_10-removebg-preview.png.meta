@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wanda_attack_10-removebg-preview_0: -2826569814421696043
+      wanda_attack_10-removebg-preview_1: 5681456035562247514
+      wanda_attack_10-removebg-preview_2: -4714671118008295587
+      wanda_attack_10-removebg-preview_3: -8862129695670255703
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

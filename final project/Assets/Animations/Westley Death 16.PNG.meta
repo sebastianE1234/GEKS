@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Westley Death 16_0: -8132121190079402760
+      Westley Death 16_1: -7612949456708376910
+      Westley Death 16_2: 5496435014173381133
+      Westley Death 16_3: 6890434119199217028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wanda_death_3-removebg-preview_0: -7976449012029841624
+      wanda_death_3-removebg-preview_1: -6112371243764488751
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
