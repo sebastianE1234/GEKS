@@ -21,8 +21,8 @@ public class Health : MonoBehaviour
             healthText.text = "Health: " + health;
         }
     }
-    
-public void TakeDamage(int amount)
+
+    public void TakeDamage(int amount)
     {
         if (isDead) return;
 
@@ -37,14 +37,7 @@ public void TakeDamage(int amount)
 
             if (animator != null)
             {
+            }
         }
-    }
-
-    private System.Collections.IEnumerator HandleDeath()
-    {
-        // Wait for animation to play (adjust this duration to match your animation length)
-        yield return new WaitForSeconds(2f);
-
-        SceneManager.LoadScene("Enchanted Forest");
     }
 }
