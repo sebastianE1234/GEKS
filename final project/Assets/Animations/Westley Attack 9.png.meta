@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Westley Attack 9_0: -1927940076056371224
+      Westley Attack 9_1: 6727830166335601617
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
