@@ -7,13 +7,6 @@ public class Health : MonoBehaviour
     public int health;
     public int maxHealth = 10;
 
-    public TextMeshProUGUI healthText;   // Assign in Inspector
-    public TextMeshProUGUI gameOverText; // Assign in Inspector
-    public Animator animator;            // Assign in Inspector
-
-    public Health enemyHealth;           // Assign the enemy's Health script in Inspector
-
-    private bool isDead = false;
 
     void Start()
     {
@@ -29,8 +22,8 @@ public class Health : MonoBehaviour
             healthText.text = "Health: " + health;
         }
     }
-
-    public void TakeDamage(int amount)
+    
+public void TakeDamage(int amount)
     {
         if (isDead) return;
 
@@ -45,10 +38,7 @@ public class Health : MonoBehaviour
 
             if (animator != null)
             {
-                animator.SetTrigger("dead"); // Trigger "Dead" animation
-            }
 
-            StartCoroutine(HandleDeath());
         }
         else
         {

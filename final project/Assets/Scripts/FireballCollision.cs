@@ -9,7 +9,7 @@ public class Fireballcollision2 : MonoBehaviour
     {
         // Ignore collisions with other fireballs
         Collider2D myCollider = GetComponent<Collider2D>();
-        GameObject[] fireballs = GameObject.FindGameObjectsWithTag("Fireball");
+        GameObject[] fireballs = GameObject.FindGameObjectsWithTag("Shard");
 
         foreach (GameObject fb in fireballs)
         {

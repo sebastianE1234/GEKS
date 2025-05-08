@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 50689ce8ff72e4b93b00e4a99ec26459
+guid: 0a234bb0aee564d2a995b8686993781f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9204017232695862700
-    second: Westley Death 4 _0
+      213: 6207240108570757843
+    second: Westley Attack 5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Westley Death 4 _0
+      name: Westley Attack 5_0
       rect:
         serializedVersion: 2
-        x: 292
-        y: 158
-        width: 691
-        height: 983
+        x: 114
+        y: 74
+        width: 312
+        height: 397
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca5296d78ec3bbf70800000000000000
-      internalID: 9204017232695862700
+      spriteID: 3dacaeacdfb842650800000000000000
+      internalID: 6207240108570757843
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Westley Death 4 _0: 9204017232695862700
+      Westley Attack 5_0: 6207240108570757843
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
