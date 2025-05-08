@@ -112,10 +112,10 @@ TextureImporter:
       name: Westley Death 16_0
       rect:
         serializedVersion: 2
-        x: 108
+        x: 41
         y: 0
-        width: 992
-        height: 1028
+        width: 390
+        height: 402
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Westley Death 16_1
       rect:
         serializedVersion: 2
-        x: 396
-        y: 630
-        width: 128
-        height: 434
+        x: 154
+        y: 245
+        width: 52
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: Westley Death 16_2
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 90
-        width: 20
-        height: 20
+        x: 449
+        y: 34
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +178,10 @@ TextureImporter:
       name: Westley Death 16_3
       rect:
         serializedVersion: 2
-        x: 1206
-        y: 54
-        width: 20
-        height: 20
+        x: 470
+        y: 20
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

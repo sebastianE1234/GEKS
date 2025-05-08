@@ -9,6 +9,8 @@ public class Health : MonoBehaviour
 
     public TextMeshProUGUI healthText;   // Assign this in the Inspector
     public TextMeshProUGUI gameOverText; // Assign this in the Inspector
+    public string deathAnimationTrigger = "Die";
+    public Animator animator;
 
     void Start()
     {
@@ -24,8 +26,8 @@ public class Health : MonoBehaviour
             healthText.text = "Health: " + health;
         }
     }
-
-    public void TakeDamage(int amount)
+    
+public void TakeDamage(int amount)
     {
         health -= amount;
         UpdateHealthUI();
@@ -33,10 +35,12 @@ public class Health : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log("Game Over!");
-            Destroy(gameObject);
             gameOverText.enabled = true;
 
-            SceneManager.LoadScene("Enchanted Forest");
+            if (animator != null)
+            {
+                animator.SetTrigger(deathAnimationTrigger);
+            }
         }
     }
 }

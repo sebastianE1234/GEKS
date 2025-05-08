@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class fireballshooter_2 : MonoBehaviour
 {
-    public GameObject FireballPrefab;
-    public float fireballSpeed = 10f;
+    public GameObject ShardPrefab; // Replace with shard prefab
+    public float shardSpeed = 10f;
 
-    public float fireOffsetX = 1f; // Distance to left/right of player
-    public float fireOffsetY = 0.5f; // Height of the fireball
-    public float cooldownTime = 4f; // Cooldown duration in seconds
+    public float fireOffsetX = 1f; // Horizontal offset
+    public float fireOffsetY = 0.5f; // Vertical offset
+    public float cooldownTime = 4f; // Cooldown duration
 
-    private float lastShotTime = -Mathf.Infinity; // Time since last shot
+    private float lastShotTime = -Mathf.Infinity;
 
     public enum PlayerID { PlayerOne, PlayerTwo }
     public PlayerID playerID;
@@ -18,28 +18,26 @@ public class fireballshooter_2 : MonoBehaviour
     {
         if (playerID == PlayerID.PlayerTwo && Input.GetKeyDown(KeyCode.L))
         {
-            // Check cooldown
             if (Time.time - lastShotTime >= cooldownTime)
             {
                 bool facingRight = transform.localScale.x > 0;
-
                 Vector2 shootDir = facingRight ? Vector2.right : Vector2.left;
                 Vector3 spawnOffset = new Vector3(facingRight ? fireOffsetX : -fireOffsetX, fireOffsetY, 0f);
                 Vector3 spawnPos = transform.position + spawnOffset;
 
                 Shoot(shootDir, spawnPos);
-                lastShotTime = Time.time; // Reset cooldown
+                lastShotTime = Time.time;
             }
         }
     }
 
     void Shoot(Vector2 direction, Vector3 spawnPosition)
     {
-        GameObject fireball = Instantiate(FireballPrefab, spawnPosition, Quaternion.identity);
-        Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
+        GameObject shard = Instantiate(ShardPrefab, spawnPosition, Quaternion.identity);
+        Rigidbody2D rb = shard.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            rb.linearVelocity = direction.normalized * fireballSpeed;
+            rb.linearVelocity = direction.normalized * shardSpeed;
         }
     }
 }

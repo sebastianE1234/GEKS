@@ -103,10 +103,10 @@ TextureImporter:
       name: Westley Death 2_0
       rect:
         serializedVersion: 2
-        x: 352
-        y: 158
-        width: 824
-        height: 983
+        x: 137
+        y: 61
+        width: 323
+        height: 386
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
