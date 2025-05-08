@@ -145,8 +145,6 @@ MonoBehaviour:
   maxHealth: 100
   healthText: {fileID: 1130245849}
   gameOverText: {fileID: 1979216536}
-  deathAnimationTrigger: Die
-  animator: {fileID: 0}
 --- !u!114 &26975517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,8 +750,6 @@ MonoBehaviour:
   maxHealth: 100
   healthText: {fileID: 2120658762}
   gameOverText: {fileID: 1979216536}
-  deathAnimationTrigger: Die
-  animator: {fileID: 346537031}
 --- !u!114 &346537030
 MonoBehaviour:
   m_ObjectHideFlags: 0

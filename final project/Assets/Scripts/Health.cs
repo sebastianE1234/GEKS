@@ -7,11 +7,6 @@ public class Health : MonoBehaviour
     public int health;
     public int maxHealth = 10;
 
-    public TextMeshProUGUI healthText;   // Assign this in the Inspector
-    public TextMeshProUGUI gameOverText; // Assign this in the Inspector
-    public string deathAnimationTrigger = "Die";
-    public Animator animator;
-
     void Start()
     {
         health = maxHealth;
@@ -29,18 +24,27 @@ public class Health : MonoBehaviour
     
 public void TakeDamage(int amount)
     {
+        if (isDead) return;
+
         health -= amount;
         UpdateHealthUI();
 
         if (health <= 0)
         {
+            isDead = true;
             Debug.Log("Game Over!");
             gameOverText.enabled = true;
 
             if (animator != null)
             {
-                animator.SetTrigger(deathAnimationTrigger);
-            }
         }
+    }
+
+    private System.Collections.IEnumerator HandleDeath()
+    {
+        // Wait for animation to play (adjust this duration to match your animation length)
+        yield return new WaitForSeconds(2f);
+
+        SceneManager.LoadScene("Enchanted Forest");
     }
 }

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Westley Jump 7_0: 8832989648742851250
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
