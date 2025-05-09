@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953cd6e2835d44be0a322490fcca9e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShardPrefab: {fileID: 998604051184579870, guid: c21299635cbdf4848935cb416c23e488, type: 3}
+  ShardsPrefab: {fileID: 998604051184579870, guid: c21299635cbdf4848935cb416c23e488, type: 3}
   shardSpeed: 10
   fireOffsetX: 1
   fireOffsetY: 0.5
@@ -822,6 +822,19 @@ MonoBehaviour:
   blockPrefab: {fileID: 6113055222531004611, guid: 27b756a7a483e4ecfbd4c56e129fac84, type: 3}
   blockSpawnPoint: {fileID: 1695579678}
   blockKey: 48
+--- !u!114 &346537041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346537019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79c36b7cc05f4464b2987fa06b8e27c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDuration: 1
 --- !u!1 &887831544
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,7 +931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -551, y: 328}
+  m_AnchoredPosition: {x: -551, y: 364}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1130245849
@@ -1104,7 +1117,7 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 1
+  m_FOVAxisMode: 0
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
@@ -1124,7 +1137,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 62.50674
+  field of view: 67.1
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1383,10 +1396,6 @@ PrefabInstance:
       propertyPath: firePointLeft
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 8888445639725352546, guid: c818a693b768a4cef8a3d30da377243c, type: 3}
-      propertyPath: FireballPrefab
-      value: 
-      objectReference: {fileID: 3272525812589873083, guid: 3fbd90940c8bb49f1b775022625d675f, type: 3}
     - target: {fileID: 8888445639725352546, guid: c818a693b768a4cef8a3d30da377243c, type: 3}
       propertyPath: firePointRight
       value: 
@@ -1699,6 +1708,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9106077579959411568, guid: 0ba7427961ae14593a0ad3cca019f38d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 346537038}
+    - targetCorrespondingSourceObject: {fileID: 9106077579959411568, guid: 0ba7427961ae14593a0ad3cca019f38d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 346537041}
   m_SourcePrefab: {fileID: 100100000, guid: 0ba7427961ae14593a0ad3cca019f38d, type: 3}
 --- !u!1 &1734036440
 GameObject:
@@ -2486,7 +2498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 555, y: 328}
+  m_AnchoredPosition: {x: 555, y: 366}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2120658762

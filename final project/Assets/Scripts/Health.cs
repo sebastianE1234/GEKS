@@ -58,13 +58,13 @@ public class Health : MonoBehaviour
                 if (animator != null)
                     animator.SetTrigger("dead");
 
-                StartCoroutine(HandleDeath());
+                
             }
             else if (CompareTag("Enemy"))
             {
                 Debug.Log("Enemy Died!");
                 if (animator != null)
-                    animator.SetTrigger("Death");
+                    animator.SetTrigger("Die");
 
                 CheckForWinCondition(); // Let the player win if enemy is dead
             }
@@ -87,11 +87,5 @@ public class Health : MonoBehaviour
                 }
             }
         }
-    }
-
-    private System.Collections.IEnumerator HandleDeath()
-    {
-        yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("Enchanted Forest");
     }
 }

@@ -1,26 +1,35 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerAttack : MonoBehaviour
 {
     private Animator animator;
+    private bool isAttacking = false;
 
-    // Start is called before the first frame update
+    // Set this to match your attack animation's duration
+    public float attackDuration = 1.0f;
+
     void Start()
     {
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.L) && !isAttacking)
         {
-            TriggerAttackAnimation();
+            isAttacking = true;
+            animator.SetBool("isAttacking", true);
+
+            // Start a coroutine to reset the animation after it finishes
+            StartCoroutine(ResetAttack());
         }
     }
 
-    void TriggerAttackAnimation()
+    private IEnumerator ResetAttack()
     {
-        animator.SetTrigger("AttackTrigger");
+        yield return new WaitForSeconds(attackDuration);
+        isAttacking = false;
+        animator.SetBool("isAttacking", false);
     }
 }

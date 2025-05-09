@@ -1,23 +1,31 @@
 using UnityEngine;
 
-public class fireballshooter_2 : MonoBehaviour
+public class ShardShooter : MonoBehaviour
 {
-    public GameObject ShardPrefab; // Replace with shard prefab
-    public float shardSpeed = 10f;
+    public GameObject ShardsPrefab; // Changed from FireballPrefab
+    public float shardSpeed = 10f; // Renamed to reflect "shard"
 
-    public float fireOffsetX = 1f; // Horizontal offset
-    public float fireOffsetY = 0.5f; // Vertical offset
-    public float cooldownTime = 4f; // Cooldown duration
+    public float fireOffsetX = 1f; // Horizontal spawn offset
+    public float fireOffsetY = 0.5f; // Vertical spawn offset
+    public float cooldownTime = 0.5f;
 
     private float lastShotTime = -Mathf.Infinity;
 
     public enum PlayerID { PlayerOne, PlayerTwo }
     public PlayerID playerID;
 
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     void Update()
     {
-        if (playerID == PlayerID.PlayerTwo && Input.GetKeyDown(KeyCode.L))
+        if (playerID == PlayerID.PlayerOne && Input.GetKeyDown(KeyCode.L))
         {
+            // Optional cooldown logic
             if (Time.time - lastShotTime >= cooldownTime)
             {
                 bool facingRight = transform.localScale.x > 0;
@@ -33,11 +41,11 @@ public class fireballshooter_2 : MonoBehaviour
 
     void Shoot(Vector2 direction, Vector3 spawnPosition)
     {
-        GameObject shard = Instantiate(ShardPrefab, spawnPosition, Quaternion.identity);
+        GameObject shard = Instantiate(ShardsPrefab, spawnPosition, Quaternion.identity);
         Rigidbody2D rb = shard.GetComponent<Rigidbody2D>();
-        if (rb != null)
-        {
-            rb.linearVelocity = direction.normalized * shardSpeed;
-        }
+        rb.linearVelocity = direction.normalized * shardSpeed;
     }
 }
+
+
+
