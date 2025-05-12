@@ -31,17 +31,7 @@ public class playermovement2 : MonoBehaviour
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
         }
-        else
-        {
-            // Player 2 controls (Arrow keys)
-            if (Input.GetKey(KeyCode.LeftArrow)) moveInput = -1f;
-            if (Input.GetKey(KeyCode.RightArrow)) moveInput = 1f;
-
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            }
-        }
+       
 
         // Horizontal movement
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);

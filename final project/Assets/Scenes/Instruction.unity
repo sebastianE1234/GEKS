@@ -477,7 +477,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 304, y: 168}
+  m_AnchoredPosition: {x: 344, y: 209}
   m_SizeDelta: {x: 141.2514, y: 53.7172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1014123072
@@ -500,23 +500,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '*If you are wanda, WASD movement E to shoot, and Q to block
-
-
-    *If
-    you are westley, Left,Right, and Up to move, L to shoot, and P to block
-
-
-    *If
-    you are cupid, WASD movement B to shoot to the right, V to shoot to the left
-
-
-    *
-    click enchanted forrest to move on
-
-
-    ** The block ability has a 15 second
-    cool down to prevent spamming, have fun players!'
+  m_text: "*If you are wanda, WASD movement Alpha2 to shoot, and Alpha1 to block\n\n*If
+    you are westley, Left,Right, and Up to move, Alpha9 to shoot, and Alpha0 to block\n\n*If
+    you are cupid, WASD movement. Alpha2 to shoot and alpha 1 to block\n\n* If you
+    are helios, Arrows to move, Alpha 9 to shoot, alpha 0 to block. \n\n* click skip
+    to move on\n\n** The block ability has a 15 second cool down to prevent spamming,
+    have fun players!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -543,8 +532,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
