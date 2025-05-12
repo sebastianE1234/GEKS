@@ -41,6 +41,23 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+
+
+        if (CompareTag("player"))
+        {
+            Debug.Log("Player Died! Game Over!");
+            if (gameOverText != null)
+                gameOverText.enabled = true;
+
+            if (animator != null)
+                animator.SetTrigger("dead");
+
+            if (GameManager.Instance != null)
+                GameManager.Instance.ReportWin("Enemy");
+
+
+        }
+
         if (isDead) return;
 
         health -= amount;
@@ -59,7 +76,7 @@ public class Health : MonoBehaviour
                 if (animator != null)
                     animator.SetTrigger("dead");
 
-                
+
             }
             else if (CompareTag("Enemy"))
             {
@@ -74,8 +91,9 @@ public class Health : MonoBehaviour
 
     void CheckForWinCondition()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("player");
-        if (player != null)
+        GameObject[] players = GameObject.FindGameObjectsWithTag("player");
+
+        foreach (GameObject player in players)
         {
             Health playerHealth = player.GetComponent<Health>();
             if (playerHealth != null && !playerHealth.isDead)
@@ -85,8 +103,19 @@ public class Health : MonoBehaviour
                 {
                     Debug.Log("Player Wins!");
                     playerAnim.SetTrigger("win");
+
+                    if (GameManager.Instance != null)
+                    {
+                        Debug.Log("Calling ReportWin for 'player'");
+                        GameManager.Instance.ReportWin("player");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("GameManager.Instance is null!");
+                    }
                 }
             }
         }
     }
+
 }

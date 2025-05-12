@@ -16,7 +16,7 @@ public class heliosshooter : MonoBehaviour
 
     void Update()
     {
-        if (playerID == PlayerID.PlayerTwo && Input.GetKeyDown(KeyCode.L))
+        if (playerID == PlayerID.PlayerTwo && Input.GetKeyDown(KeyCode.Alpha9))
         {
             // Check cooldown
             if (Time.time - lastShotTime >= cooldownTime)

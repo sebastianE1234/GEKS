@@ -25,7 +25,7 @@ public class ShardShooter : MonoBehaviour
 
     void Update()
     {
-        if (playerID == PlayerID.PlayerTwo && Input.GetKeyDown(KeyCode.Alpha9))
+
         {
             // Optional cooldown logic
             if (Time.time - lastShotTime >= cooldownTime)
