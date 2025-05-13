@@ -12,6 +12,7 @@ public class Health : MonoBehaviour
     public Animator animator;
 
     private bool isDead = false;
+    internal int currentHealth;
 
     void Start()
     {
