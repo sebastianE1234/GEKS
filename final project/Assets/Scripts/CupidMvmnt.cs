@@ -6,9 +6,10 @@ public class cupidmovement : MonoBehaviour
     public float jumpForce = 7f;
     public Transform groundCheck;
     public LayerMask groundLayer;
-    public bool usesWASD = true; // true = use Arrow Keys, false = use A/D/W
+    public bool usesWASD = true;
 
     private Rigidbody2D rb;
+    private Animator animator;
     private bool isGrounded;
     private bool facingRight = true;
 
@@ -22,6 +23,7 @@ public class cupidmovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -43,7 +45,6 @@ public class cupidmovement : MonoBehaviour
             }
         }
 
-
         // Horizontal movement
         linearVelocity = new Vector2(moveInput * moveSpeed, linearVelocity.y);
 
@@ -56,6 +57,13 @@ public class cupidmovement : MonoBehaviour
         {
             Flip();
         }
+
+        // Animation parameters
+        bool isWalking = moveInput != 0;
+        bool isJumping = rb.linearVelocity.y > 0.1f;
+
+        animator.SetBool("isWalking", isWalking);
+        animator.SetBool("isJumping", isJumping);
     }
 
     void Flip()
