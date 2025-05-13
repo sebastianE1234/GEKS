@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7b2d31395e6d64ebf8b80509fb5f1bb3
+guid: d12dfb6a3a0b74989adaf85eebc0374a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7374819979511162240
-    second: Westley Victory 8_0
+      213: 2193675533471601302
+    second: fire wall_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Westley Victory 8_0
+      name: fire wall_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 21
         y: 0
-        width: 500
-        height: 500
+        width: 1059
+        height: 753
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08a98c65d4067a990800000000000000
-      internalID: -7374819979511162240
+      spriteID: 6925a0d6640817e10800000000000000
+      internalID: 2193675533471601302
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Westley Victory 8_0: -7374819979511162240
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
