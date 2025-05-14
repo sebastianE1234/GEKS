@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 05de93d64742342d6b4204a0d486c6a4
+guid: 26dc775561deb4c1bb413970bd868210
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8194765625559930993
-    second: Helios Attack 11_0
+      213: -7957612530244753127
+    second: bush block_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Helios Attack 11_0
+      name: bush block_0
       rect:
         serializedVersion: 2
-        x: 108
-        y: 19
-        width: 320
-        height: 422
+        x: 0
+        y: 0
+        width: 144
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f872beec418564e80800000000000000
-      internalID: -8194765625559930993
+      spriteID: 9196092a091e09190800000000000000
+      internalID: -7957612530244753127
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Helios Attack 11_0: -8194765625559930993
+      bush block_0: -7957612530244753127
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
