@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Helios Idle 4_0: 965077148625027438
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
