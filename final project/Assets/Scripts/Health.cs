@@ -24,6 +24,14 @@ public class Health : MonoBehaviour
         UpdateHealthUI();
     }
 
+    public void ResetHealth()
+    {
+        health = maxHealth;  // Reset health to max value (100)
+        isDead = false;      // Set isDead to false, so player can move again
+        UpdateHealthUI();    // Update the health UI
+    }
+
+
     void UpdateHealthUI()
     {
         if (CompareTag("player") && healthText != null)
@@ -35,12 +43,15 @@ public class Health : MonoBehaviour
         {
             healthText.text = "Health: " + health;
         }
+        
+
     }
 
 
 
     public void TakeDamage(int amount)
     {
+
         if (isDead) return;
 
         health -= amount;
@@ -105,6 +116,7 @@ public class Health : MonoBehaviour
                 {
                     Debug.Log("Player Wins!");
                     playerAnim.SetTrigger("win");
+
 
                 }
             }

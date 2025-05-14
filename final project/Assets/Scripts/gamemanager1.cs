@@ -2,9 +2,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class GameManager : MonoBehaviour
+public class GameManager1 : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static GameManager1 Instance;
 
     public int playerWins = 0;
     public int enemyWins = 0;
@@ -16,15 +16,14 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject); // Don't destroy the GameManager
             Debug.Log("GameManager initialized.");
         }
         else if (Instance != this)
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // If there's already an instance, destroy this one
         }
     }
-
 
     public void ReportWin(string winnerTag)
     {
@@ -34,7 +33,7 @@ public class GameManager : MonoBehaviour
             enemyWins++;
 
         UpdateWinText();
-        StartCoroutine(RestartAfterDelay(3f));
+        StartCoroutine(RestartAfterDelay(3f));  // Restart game after a delay
     }
 
     void UpdateWinText()
@@ -48,7 +47,26 @@ public class GameManager : MonoBehaviour
     System.Collections.IEnumerator RestartAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
+
+        // Reload the scene to reset everything, but keep the player and other objects intact
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        // Reset player health (this will be called again once the scene is reloaded)
+        ResetPlayerHealth();
+    }
+
+    void ResetPlayerHealth()
+    {
+        // Find the player and reset health
+        GameObject player = GameObject.FindWithTag("player");
+        if (player != null)
+        {
+            Health playerHealth = player.GetComponent<Health>();
+            if (playerHealth != null)
+            {
+                playerHealth.ResetHealth(); // Reset the health of the player
+            }
+        }
     }
 
     void Update()

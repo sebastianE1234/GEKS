@@ -411,7 +411,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
-  isPlayer: 1
+  isPlayer: 0
 --- !u!114 &91056364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1757,6 +1757,7 @@ MonoBehaviour:
   healthText: {fileID: 59221352}
   gameOverText: {fileID: 824222463}
   animator: {fileID: 1757086144}
+  isDead: 0
 --- !u!1 &1827558203
 GameObject:
   m_ObjectHideFlags: 0
