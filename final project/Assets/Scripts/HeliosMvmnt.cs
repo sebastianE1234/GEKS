@@ -35,12 +35,7 @@ public class heliosmovement : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
 
-        // Set "isJumping" to false if grounded
-        if (isGrounded && isJumping)
-        {
-            isJumping = false;
-            animator.SetBool("isJumping", false); // Reset "isJumping" animation parameter
-        }
+   
     }
 
     void Update()
@@ -52,9 +47,10 @@ public class heliosmovement : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftArrow)) moveInput = -1f;
             if (Input.GetKey(KeyCode.RightArrow)) moveInput = 1f;
-            if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                Jump();
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                animator.SetBool("isJumping", true); // Set jumping animation
             }
         }
 
@@ -85,7 +81,7 @@ public class heliosmovement : MonoBehaviour
         }
 
         // If the player is in the air and presses Up Arrow, don't let them jump again
-        if (Input.GetKeyDown(KeyCode.UpArrow) && !isGrounded)
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             return; // Don't jump if already in the air
         }
