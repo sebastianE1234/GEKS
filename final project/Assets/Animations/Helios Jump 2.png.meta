@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Helios Jump 2_0: -6465688198399103526
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

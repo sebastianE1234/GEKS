@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Health : MonoBehaviour
 {
@@ -49,47 +50,27 @@ public class Health : MonoBehaviour
 
 
 
-    public void TakeDamage(int amount)
+   public void TakeDamage(int amount)
+{
+    if (isDead) return;
+
+    health -= amount;
+    UpdateHealthUI();
+
+    if (health <= 0)
     {
+        isDead = true;
 
-        if (isDead) return;
-
-        health -= amount;
-        UpdateHealthUI();
-
-        if (health <= 0)
+        if (CompareTag("player"))
         {
-            isDead = true;
+            Debug.Log("Player Died! Game Over!");
+            if (gameOverText != null)
+                gameOverText.enabled = true;
 
-            if (CompareTag("player"))
-            {
-                Debug.Log("Player Died! Game Over!");
-                if (gameOverText != null)
-                    gameOverText.enabled = true;
+            if (animator != null)
+                animator.SetTrigger("dead");
 
-                if (animator != null)
-                    animator.SetTrigger("dead");
-
-                TriggerOtherPlayerVictory();
-            }
-
-            void TriggerOtherPlayerVictory()
-            {
-                GameObject Enemy = GameObject.FindGameObjectWithTag("Enemy");
-
-                Health EnemyHealth = Enemy.GetComponent<Health>();
-                if (EnemyHealth != null && !EnemyHealth.isDead)
-                {
-                    Animator playerAnim = EnemyHealth.animator;
-                    if (playerAnim != null)
-                    {
-                        Debug.Log("Enemy Wins!");
-                        playerAnim.SetTrigger("Win");
-
-                    }
-                }
-
-            }
+            TriggerOtherPlayerVictory();
         }
 
         else if (CompareTag("Enemy"))
@@ -98,9 +79,14 @@ public class Health : MonoBehaviour
             if (animator != null)
                 animator.SetTrigger("Die");
 
-            CheckForWinCondition(); // Let the player win if enemy is dead
+            CheckForWinCondition(); // Player wins if enemy is dead
         }
-        
+    }
+}
+
+    private void TriggerOtherPlayerVictory()
+    {
+        throw new NotImplementedException();
     }
 
     void CheckForWinCondition()

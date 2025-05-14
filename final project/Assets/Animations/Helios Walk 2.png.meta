@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Helios Walk 2_0: -352844340328842375
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

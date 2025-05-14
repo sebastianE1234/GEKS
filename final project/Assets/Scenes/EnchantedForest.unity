@@ -473,7 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1346e1082b50342a8bbe3ef0a6ea3596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockPrefab: {fileID: 8257671097583833273, guid: 799b4ae480a644046b38f831b1d53429, type: 3}
+  blockPrefab: {fileID: 7922020210256404241, guid: 799b4ae480a644046b38f831b1d53429, type: 3}
   blockSpawnPoint: {fileID: 542399493}
   blockKey: 48
 --- !u!95 &91056368
@@ -1600,7 +1600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1346e1082b50342a8bbe3ef0a6ea3596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockPrefab: {fileID: 6113055222531004611, guid: 27b756a7a483e4ecfbd4c56e129fac84, type: 3}
+  blockPrefab: {fileID: 2436531894658638602, guid: 432d7832e353944d4b131f3888f42898, type: 3}
   blockSpawnPoint: {fileID: 1341139426}
   blockKey: 49
 --- !u!114 &1757086136
@@ -1749,7 +1749,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1757086133}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3d6fa195589e4bc3a1a7a6aa117c7bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 1825762f7f5a34a2d80d220ef554cb74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
@@ -1757,7 +1757,6 @@ MonoBehaviour:
   healthText: {fileID: 59221352}
   gameOverText: {fileID: 824222463}
   animator: {fileID: 1757086144}
-  isDead: 0
 --- !u!1 &1827558203
 GameObject:
   m_ObjectHideFlags: 0
