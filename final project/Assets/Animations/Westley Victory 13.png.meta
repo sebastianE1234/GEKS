@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Westley Victory 13_0: -5999774294166214
+      Westley Victory 13_1: -7456531411438161526
+      Westley Victory 13_2: 3159729353713696509
+      Westley Victory 13_3: -3183547027926540469
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
