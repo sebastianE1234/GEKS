@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cupid_death_17-removebg-preview_0: 1318976374563235208
+      cupid_death_17-removebg-preview_1: -5315490783245187957
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

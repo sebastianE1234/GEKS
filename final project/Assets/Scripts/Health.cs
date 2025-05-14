@@ -52,22 +52,6 @@ public class Health : MonoBehaviour
     public void TakeDamage(int amount)
     {
 
-
-        if (CompareTag("player"))
-        {
-            Debug.Log("Player Died! Game Over!");
-            if (gameOverText != null)
-                gameOverText.enabled = true;
-
-            if (animator != null)
-                animator.SetTrigger("dead");
-
-            if (GameManager1.Instance != null)
-                GameManager1.Instance.ReportWin("Enemy");
-
-
-        }
-
         if (isDead) return;
 
         health -= amount;
@@ -86,24 +70,43 @@ public class Health : MonoBehaviour
                 if (animator != null)
                     animator.SetTrigger("dead");
 
-
+                TriggerOtherPlayerVictory();
             }
-            else if (CompareTag("Enemy"))
-            {
-                Debug.Log("Enemy Died!");
-                if (animator != null)
-                    animator.SetTrigger("Die");
 
-                CheckForWinCondition(); // Let the player win if enemy is dead
+            void TriggerOtherPlayerVictory()
+            {
+                GameObject Enemy = GameObject.FindGameObjectWithTag("Enemy");
+
+                Health EnemyHealth = Enemy.GetComponent<Health>();
+                if (EnemyHealth != null && !EnemyHealth.isDead)
+                {
+                    Animator playerAnim = EnemyHealth.animator;
+                    if (playerAnim != null)
+                    {
+                        Debug.Log("Enemy Wins!");
+                        playerAnim.SetTrigger("Win");
+
+                    }
+                }
+
             }
         }
+
+        else if (CompareTag("Enemy"))
+        {
+            Debug.Log("Enemy Died!");
+            if (animator != null)
+                animator.SetTrigger("Die");
+
+            CheckForWinCondition(); // Let the player win if enemy is dead
+        }
+        
     }
 
     void CheckForWinCondition()
     {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("player");
-
-        foreach (GameObject player in players)
+        GameObject player = GameObject.FindGameObjectWithTag("player");
+        if (player != null)
         {
             Health playerHealth = player.GetComponent<Health>();
             if (playerHealth != null && !playerHealth.isDead)
@@ -114,18 +117,9 @@ public class Health : MonoBehaviour
                     Debug.Log("Player Wins!");
                     playerAnim.SetTrigger("win");
 
-                    if (GameManager1.Instance != null)
-                    {
-                        Debug.Log("Calling ReportWin for 'player'");
-                        GameManager1.Instance.ReportWin("player");
-                    }
-                    else
-                    {
-                        Debug.LogWarning("GameManager.Instance is null!");
-                    }
+
                 }
             }
         }
     }
-
 }

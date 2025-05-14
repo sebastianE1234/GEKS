@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cupid_walk_1-removebg-preview_0: 3760600039867078904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
