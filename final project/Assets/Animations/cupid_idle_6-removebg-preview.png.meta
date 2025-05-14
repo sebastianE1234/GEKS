@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cupid_idle_6-removebg-preview_0: -1178423072090086439
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

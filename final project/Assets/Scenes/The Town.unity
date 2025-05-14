@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1346e1082b50342a8bbe3ef0a6ea3596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockPrefab: {fileID: 5005233269304616408, guid: 40bf9d1b8099b4368b0c66fd938d7d1a, type: 3}
+  blockPrefab: {fileID: 8808380490546524025, guid: e83e9f9db6e2d4b59801396316deef6b, type: 3}
   blockSpawnPoint: {fileID: 2143082409}
   blockKey: 49
 --- !u!95 &26975535
