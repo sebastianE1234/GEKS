@@ -24,6 +24,14 @@ public class Health : MonoBehaviour
         UpdateHealthUI();
     }
 
+    public void ResetHealth()
+    {
+        health = maxHealth;  // Reset health to max value (100)
+        isDead = false;      // Set isDead to false, so player can move again
+        UpdateHealthUI();    // Update the health UI
+    }
+
+
     void UpdateHealthUI()
     {
         if (CompareTag("player") && healthText != null)
@@ -35,6 +43,8 @@ public class Health : MonoBehaviour
         {
             healthText.text = "Health: " + health;
         }
+        
+
     }
 
 
@@ -52,8 +62,8 @@ public class Health : MonoBehaviour
             if (animator != null)
                 animator.SetTrigger("dead");
 
-            if (GameManager.Instance != null)
-                GameManager.Instance.ReportWin("Enemy");
+            if (GameManager1.Instance != null)
+                GameManager1.Instance.ReportWin("Enemy");
 
 
         }
@@ -104,10 +114,10 @@ public class Health : MonoBehaviour
                     Debug.Log("Player Wins!");
                     playerAnim.SetTrigger("win");
 
-                    if (GameManager.Instance != null)
+                    if (GameManager1.Instance != null)
                     {
                         Debug.Log("Calling ReportWin for 'player'");
-                        GameManager.Instance.ReportWin("player");
+                        GameManager1.Instance.ReportWin("player");
                     }
                     else
                     {
