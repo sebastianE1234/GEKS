@@ -158,8 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 287dc509dd3c04a92b7b1c87136a3a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -18
-  maxX: 18
+  minX: -13
+  maxX: 13
 --- !u!114 &26975529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,7 +691,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -902,8 +902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 287dc509dd3c04a92b7b1c87136a3a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -18
-  maxX: 18
+  minX: -13
+  maxX: 13
 --- !u!95 &346537031
 Animator:
   serializedVersion: 7

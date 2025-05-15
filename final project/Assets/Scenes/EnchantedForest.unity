@@ -411,7 +411,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
-  isPlayer: 0
+  usesArrows: 1
+  isJumping: 0
 --- !u!114 &91056364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,8 +460,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 287dc509dd3c04a92b7b1c87136a3a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -17
-  maxX: 17
+  minX: -15
+  maxX: 15
 --- !u!114 &91056367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1586,8 +1587,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 287dc509dd3c04a92b7b1c87136a3a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -17
-  maxX: 17
+  minX: -15
+  maxX: 15
 --- !u!114 &1757086135
 MonoBehaviour:
   m_ObjectHideFlags: 0
