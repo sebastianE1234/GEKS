@@ -411,7 +411,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
-  isPlayer: 0
+  usesArrows: 1
+  isJumping: 0
 --- !u!114 &91056364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,7 +1176,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 4d500af9ac65b4d8c8171b003404d50d, type: 3}
   m_Resource: {fileID: 8300000, guid: 4d500af9ac65b4d8c8171b003404d50d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
