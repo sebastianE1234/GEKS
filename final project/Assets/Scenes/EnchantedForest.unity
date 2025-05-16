@@ -411,7 +411,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
-  isPlayer: 0
+  usesArrows: 1
+  isJumping: 0
 --- !u!114 &91056364
 MonoBehaviour:
   m_ObjectHideFlags: 0

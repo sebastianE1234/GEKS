@@ -15,12 +15,24 @@ public class Health : MonoBehaviour
     private bool isDead = false;
     internal int currentHealth;
 
+    private Health playerHealthScript; // Reference to the player's Health script
+
     void Start()
     {
         health = maxHealth;
 
         if (CompareTag("player") && gameOverText != null)
             gameOverText.enabled = false;
+
+        // Get the reference to the player's Health script if this is the enemy
+        if (CompareTag("Enemy"))
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("player");
+            if (player != null)
+            {
+                playerHealthScript = player.GetComponent<Health>();
+            }
+        }
 
         UpdateHealthUI();
     }
@@ -31,7 +43,6 @@ public class Health : MonoBehaviour
         isDead = false;      // Set isDead to false, so player can move again
         UpdateHealthUI();    // Update the health UI
     }
-
 
     void UpdateHealthUI()
     {
@@ -44,51 +55,62 @@ public class Health : MonoBehaviour
         {
             healthText.text = "Health: " + health;
         }
-        
-
     }
 
-
-
-   public void TakeDamage(int amount)
-{
-    if (isDead) return;
-
-    health -= amount;
-    UpdateHealthUI();
-
-    if (health <= 0)
+    public void TakeDamage(int amount)
     {
-        isDead = true;
+        if (isDead) return;
 
-        if (CompareTag("player"))
+        health -= amount;
+        UpdateHealthUI();
+
+        if (health <= 0)
         {
-            Debug.Log("Player Died! Game Over!");
-            if (gameOverText != null)
-                gameOverText.enabled = true;
+            isDead = true;
 
-            if (animator != null)
-                animator.SetTrigger("dead");
+            if (CompareTag("player"))
+            {
+                Debug.Log("Player Died! Game Over!");
+                if (gameOverText != null)
+                    gameOverText.enabled = true;
 
-            TriggerOtherPlayerVictory();
-        }
+                if (animator != null)
+                    animator.SetTrigger("dead");
 
-        else if (CompareTag("Enemy"))
-        {
-            Debug.Log("Enemy Died!");
-            if (animator != null)
-                animator.SetTrigger("Die");
+                TriggerOtherPlayerVictory();
+            }
+            else if (CompareTag("Enemy"))
+            {
+                Debug.Log("Enemy Died!");
+                if (animator != null)
+                {
+                    animator.SetTrigger("Die");
+                    animator.SetTrigger("Death");
+                }
 
-            CheckForWinCondition(); // Player wins if enemy is dead
+                CheckForWinCondition(); // Player wins if enemy is dead
+            }
         }
     }
-}
 
     private void TriggerOtherPlayerVictory()
     {
-        throw new NotImplementedException();
+        GameObject Enemy = GameObject.FindGameObjectWithTag("Enemy");
+        if (Enemy != null)
+        {
+            Health EnemyHealth = Enemy.GetComponent<Health>();
+            if (EnemyHealth != null && !EnemyHealth.isDead)
+            {
+                Animator EnemyAnim = EnemyHealth.animator;
+                if (EnemyAnim != null)
+                {
+                    Debug.Log("Enemy Wins!");
+                    EnemyAnim.SetTrigger("Victory");
+                    EnemyAnim.SetTrigger("Win");
+                }
+            }
+        }
     }
-
     void CheckForWinCondition()
     {
         GameObject player = GameObject.FindGameObjectWithTag("player");
@@ -102,8 +124,6 @@ public class Health : MonoBehaviour
                 {
                     Debug.Log("Player Wins!");
                     playerAnim.SetTrigger("win");
-
-
                 }
             }
         }

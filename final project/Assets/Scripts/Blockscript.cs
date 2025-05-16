@@ -6,6 +6,7 @@ public class Block : MonoBehaviour
     {
         // Destroy the block on collision with the fireball
         if (collision.gameObject.tag == "Fireball")
+        if (collision.gameObject.tag == "Shard")
         {
             Destroy(gameObject);
 

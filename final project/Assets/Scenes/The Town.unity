@@ -691,7 +691,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1023,6 +1023,7 @@ MonoBehaviour:
   playerWins: 0
   enemyWins: 0
   winCounterText: {fileID: 74803633}
+  isGameOver: 1
 --- !u!4 &937479179
 Transform:
   m_ObjectHideFlags: 0
