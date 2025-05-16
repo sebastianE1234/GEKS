@@ -54,7 +54,7 @@ public class heliosmovement : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftArrow)) moveInput = -1f;
             if (Input.GetKey(KeyCode.RightArrow)) moveInput = 1f;
-            if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 animator.SetBool("isJumping", true);

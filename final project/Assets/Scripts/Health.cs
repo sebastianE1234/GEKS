@@ -5,21 +5,20 @@ using System;
 
 public class Health : MonoBehaviour
 {
-    public int health;
     public int maxHealth = 10;
+    public int currentHealth;
 
     public TextMeshProUGUI healthText;   // Only needed for player
     public TextMeshProUGUI gameOverText; // Only needed for player
     public Animator animator;
 
     private bool isDead = false;
-    internal int currentHealth;
 
     private Health playerHealthScript; // Reference to the player's Health script
 
     void Start()
     {
-        health = maxHealth;
+        currentHealth = maxHealth;
 
         if (CompareTag("player") && gameOverText != null)
             gameOverText.enabled = false;
@@ -39,122 +38,107 @@ public class Health : MonoBehaviour
 
     public void ResetHealth()
     {
-        health = maxHealth;  // Reset health to max value (100)
-        isDead = false;      // Set isDead to false, so player can move again
-        UpdateHealthUI();    // Update the health UI
+        currentHealth = maxHealth;  // Reset to max
+        isDead = false;
+        UpdateHealthUI();
     }
 
     void UpdateHealthUI()
     {
         if (CompareTag("player") && healthText != null)
         {
-            healthText.text = "Health: " + health;
+            healthText.text = "Health: " + currentHealth;
         }
 
         if (CompareTag("Enemy") && healthText != null)
         {
-            healthText.text = "Health: " + health;
+            healthText.text = "Health: " + currentHealth;
         }
     }
+
     public void TakeDamage(int amount)
     {
         if (isDead) return;
 
-        health -= amount;
+        currentHealth -= amount;
         UpdateHealthUI();
 
-        if (health <= 0)
+        Debug.Log($"{gameObject.name} took {amount} damage. Current Health: {currentHealth}");
+
+        if (currentHealth <= 0)
         {
             isDead = true;
 
             // Stop all movement on playermovement2 and playermovement3 if they exist
             playermovement2 movementScript2 = GetComponent<playermovement2>();
-            if (movementScript2 != null)
-            {
-                movementScript2.isDead = true;
-            }
+            if (movementScript2 != null) movementScript2.isDead = true;
 
             playermovement3 movementScript3 = GetComponent<playermovement3>();
-            if (movementScript3 != null)
-            {
-                movementScript3.isDead = true;
-            }
+            if (movementScript3 != null) movementScript3.isDead = true;
 
             if (CompareTag("player"))
             {
                 Debug.Log("Player Died! Game Over!");
-                if (gameOverText != null)
-                    gameOverText.enabled = true;
-
-                if (animator != null)
-                    animator.SetTrigger("dead");
+                if (gameOverText != null) gameOverText.enabled = true;
+                if (animator != null) animator.SetTrigger("dead");
 
                 TriggerOtherPlayerVictory();
             }
             else if (CompareTag("Enemy"))
             {
                 Debug.Log("Enemy Died!");
-                if (animator != null)
-                    animator.SetTrigger("Die");
+                if (animator != null) animator.SetTrigger("Death");
 
-
-                CheckForWinCondition(); // Player wins if enemy is dead
+                CheckForWinCondition();
             }
         }
     }
 
     void TriggerOtherPlayerVictory()
     {
-        GameObject Enemy = GameObject.FindGameObjectWithTag("Enemy");
-        if (Enemy != null)
+        GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
+        if (enemy != null)
         {
-            Health EnemyHealth = Enemy.GetComponent<Health>();
-            if (EnemyHealth != null && !EnemyHealth.isDead)
+            Health enemyHealth = enemy.GetComponent<Health>();
+            if (enemyHealth != null && !enemyHealth.isDead)
             {
-                Animator EnemyAnim = EnemyHealth.animator;
-                if (EnemyAnim != null)
+                Animator enemyAnim = enemyHealth.animator;
+                if (enemyAnim != null)
                 {
                     Debug.Log("Enemy Wins!");
-                    EnemyAnim.SetTrigger("Victory");
-                    EnemyAnim.SetTrigger("Win");
+                    enemyAnim.SetTrigger("Victory");
                 }
             }
         }
     }
+
     void CheckForWinCondition()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("player");
+        GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
+
+        if (player != null && enemy != null)
+        {
+            Health playerHealth = player.GetComponent<Health>();
+            Health enemyHealth = enemy.GetComponent<Health>();
+
+            if (playerHealth != null && enemyHealth != null &&
+                playerHealth.currentHealth > 0 && enemyHealth.currentHealth <= 0)
             {
-                GameObject player = GameObject.FindGameObjectWithTag("player");
-                GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
+                // Stop movement
+                playermovement2 wanda = player.GetComponent<playermovement2>();
+                if (wanda != null) wanda.isDead = true;
 
-                if (player != null && enemy != null)
+                playermovement3 westley = player.GetComponent<playermovement3>();
+                if (westley != null) westley.isDead = true;
+
+                Animator playerAnim = playerHealth.animator;
+                if (playerAnim != null)
                 {
-                    Health playerHealth = player.GetComponent<Health>();
-                    Health enemyHealth = enemy.GetComponent<Health>();
-
-                    if (playerHealth != null && enemyHealth != null &&
-                        playerHealth.health > 0 && enemyHealth.health <= 0)
-                    {
-                        // ✅ Stop movement of Player2 (cupidmovement) and Player3 (heliosmovement)
-                        playermovement2 wanda = player.GetComponent<playermovement2>();
-                        if (wanda != null) wanda.isDead = true;
-
-                        playermovement3 westley = player.GetComponent<playermovement3>();
-                        if (westley != null) westley.isDead = true;
-
-                        // ✅ Optionally trigger win animation
-                        Animator playerAnim = playerHealth.animator;
-                        if (playerAnim != null)
-                        {
-                            Debug.Log("Player Wins!");
-                            playerAnim.SetTrigger("win");
-                        }
-                    }
+                    Debug.Log("Player Wins!");
+                    playerAnim.SetTrigger("win");
                 }
             }
-
         }
-    
-
-
-
-
+    }
+}
