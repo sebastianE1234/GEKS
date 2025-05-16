@@ -5,6 +5,7 @@ public class playermovement2 : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 7f;
     public bool isPlayer = true; // true = Player 1 (WASD), false = Player 2 (Arrows)
+    public bool isDead = false;  // New flag to check if player is dead
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -18,6 +19,15 @@ public class playermovement2 : MonoBehaviour
 
     void Update()
     {
+        if (isDead)
+        {
+            // Stop all movement
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isJumping", false);
+            return;
+        }
+
         float moveInput = 0f;
 
         // Player 1 controls (WASD)
@@ -31,7 +41,6 @@ public class playermovement2 : MonoBehaviour
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
         }
-       
 
         // Horizontal movement
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);

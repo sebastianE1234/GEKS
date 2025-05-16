@@ -12,8 +12,11 @@ public class heliosmovement : MonoBehaviour
     private bool isGrounded;
     private bool facingRight = true;
 
-    // Animator reference
     private Animator animator;
+    public bool isJumping;
+
+    // ✅ Add this to enable movement disabling
+    public bool isDead = false;
 
     // Custom linearVelocity property
     public Vector2 linearVelocity
@@ -22,82 +25,63 @@ public class heliosmovement : MonoBehaviour
         set => rb.linearVelocity = value;
     }
 
-    // isJumping bool to control animation transitions
-    public bool isJumping;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>(); // Get the Animator component
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        if (isDead) return; // ✅ Prevent any movement logic
 
-   
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
     void Update()
     {
+        if (isDead) // ✅ Stop all input if dead
+        {
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("Is walking", false);
+            animator.SetBool("isJumping", false);
+            return;
+        }
+
         float moveInput = 0f;
 
-        // Handle movement input based on arrow keys or WASD
         if (usesArrows)
         {
             if (Input.GetKey(KeyCode.LeftArrow)) moveInput = -1f;
             if (Input.GetKey(KeyCode.RightArrow)) moveInput = 1f;
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                animator.SetBool("isJumping", true); // Set jumping animation
+                animator.SetBool("isJumping", true);
             }
         }
 
         // Horizontal movement
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
-        // Update animation state
-        if (Mathf.Abs(moveInput) > 0.1f)
-        {
-            animator.SetBool("Is walking", true); // Set walking animation
-        }
-        else
-        {
-            animator.SetBool("Is walking", false); // Set idle animation
-        }
+        // Animation state
+        animator.SetBool("Is walking", Mathf.Abs(moveInput) > 0.1f);
 
-        // Horizontal movement
-        linearVelocity = new Vector2(moveInput * moveSpeed, linearVelocity.y);
+        // Flip character
+        if (moveInput > 0 && !facingRight) Flip();
+        else if (moveInput < 0 && facingRight) Flip();
 
-        // Flip the character based on movement direction
-        if (moveInput > 0 && !facingRight)
-        {
-            Flip();
-        }
-        else if (moveInput < 0 && facingRight)
-        {
-            Flip();
-        }
-
-        // If the player is in the air and presses Up Arrow, don't let them jump again
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            return; // Don't jump if already in the air
-        }
-
-        // Update "isJumping" boolean in the animator
-        animator.SetBool("isJumping", isJumping);
+        // Update jumping state
+        animator.SetBool("isJumping", rb.linearVelocity.y > 0.1f || rb.linearVelocity.y < -0.1f);
     }
 
     void Jump()
     {
-        // Apply jump force
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        if (isDead || !isGrounded) return;
 
-        // Set isJumping to true to trigger the jump animation
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         isJumping = true;
-        animator.SetBool("isJumping", true); // Set "isJumping" animation parameter to true
+        animator.SetBool("isJumping", true);
     }
 
     void Flip()
@@ -107,5 +91,4 @@ public class heliosmovement : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
     }
-
 }

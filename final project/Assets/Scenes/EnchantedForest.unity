@@ -413,23 +413,7 @@ MonoBehaviour:
     m_Bits: 0
   usesArrows: 1
   isJumping: 0
---- !u!114 &91056364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 91056357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1825762f7f5a34a2d80d220ef554cb74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 100
-  healthText: {fileID: 1632059465}
-  gameOverText: {fileID: 824222463}
-  animator: {fileID: 91056368}
+  isDead: 0
 --- !u!114 &91056365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,6 +483,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &91056369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91056357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d800e23f77f394967bc17ac3ab6d88d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 100
+  healthText: {fileID: 1632059465}
+  gameOverText: {fileID: 824222463}
+  animator: {fileID: 91056368}
 --- !u!1 &276443299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,6 +1720,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   usesWASD: 1
+  isDead: 0
 --- !u!95 &1757086144
 Animator:
   serializedVersion: 7
@@ -1741,7 +1743,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1757086146
+--- !u!114 &1757086148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1750,7 +1752,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1757086133}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1825762f7f5a34a2d80d220ef554cb74, type: 3}
+  m_Script: {fileID: 11500000, guid: d800e23f77f394967bc17ac3ab6d88d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
@@ -2432,9 +2434,6 @@ PrefabInstance:
       addedObject: {fileID: 91056363}
     - targetCorrespondingSourceObject: {fileID: 2464284632292778095, guid: b7a1167cd09094c7185a341ef4f92455, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 91056364}
-    - targetCorrespondingSourceObject: {fileID: 2464284632292778095, guid: b7a1167cd09094c7185a341ef4f92455, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 91056365}
     - targetCorrespondingSourceObject: {fileID: 2464284632292778095, guid: b7a1167cd09094c7185a341ef4f92455, type: 3}
       insertIndex: -1
@@ -2445,6 +2444,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2464284632292778095, guid: b7a1167cd09094c7185a341ef4f92455, type: 3}
       insertIndex: -1
       addedObject: {fileID: 91056368}
+    - targetCorrespondingSourceObject: {fileID: 2464284632292778095, guid: b7a1167cd09094c7185a341ef4f92455, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 91056369}
   m_SourcePrefab: {fileID: 100100000, guid: b7a1167cd09094c7185a341ef4f92455, type: 3}
 --- !u!1001 &3219614588100472584
 PrefabInstance:
@@ -2544,7 +2546,7 @@ PrefabInstance:
       addedObject: {fileID: 1757086144}
     - targetCorrespondingSourceObject: {fileID: 8825014950965962706, guid: 5f498147d08e54a51b389ccfc433feee, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1757086146}
+      addedObject: {fileID: 1757086148}
   m_SourcePrefab: {fileID: 100100000, guid: 5f498147d08e54a51b389ccfc433feee, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

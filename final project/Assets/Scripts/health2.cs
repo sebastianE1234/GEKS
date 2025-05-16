@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using System;
 
-public class Health : MonoBehaviour
+public class health2 : MonoBehaviour
 {
     public int health;
     public int maxHealth = 10;
@@ -44,7 +44,7 @@ public class Health : MonoBehaviour
         {
             healthText.text = "Health: " + health;
         }
-        
+
 
     }
 
@@ -61,17 +61,17 @@ public class Health : MonoBehaviour
         {
             isDead = true;
 
-            // Stop all movement on playermovement2 and playermovement3 if they exist
-            playermovement2 movementScript2 = GetComponent<playermovement2>();
-            if (movementScript2 != null)
+            // Stop all movement
+            cupidmovement cupid = GetComponent<cupidmovement>();
+            if (cupid != null)
             {
-                movementScript2.isDead = true;
+                cupid.isDead = true;
             }
 
-            playermovement3 movementScript3 = GetComponent<playermovement3>();
-            if (movementScript3 != null)
+            heliosmovement helios = GetComponent<heliosmovement>();
+            if (helios != null)
             {
-                movementScript3.isDead = true;
+                helios.isDead = true;
             }
 
             if (CompareTag("player"))
@@ -94,48 +94,32 @@ public class Health : MonoBehaviour
                 CheckForWinCondition(); // Player wins if enemy is dead
             }
         }
-    }
 
-    void TriggerOtherPlayerVictory()
-    {
-        throw new NotImplementedException();
-    }
+        void TriggerOtherPlayerVictory()
+        {
+            throw new NotImplementedException();
+        }
 
-
-    void CheckForWinCondition()
+        void CheckForWinCondition()
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("player");
+            if (player != null)
             {
-                GameObject player = GameObject.FindGameObjectWithTag("player");
-                GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
-
-                if (player != null && enemy != null)
+                health2 playerHealth = player.GetComponent<health2>();
+                if (!(playerHealth == null || playerHealth.isDead))
                 {
-                    Health playerHealth = player.GetComponent<Health>();
-                    Health enemyHealth = enemy.GetComponent<Health>();
-
-                    if (playerHealth != null && enemyHealth != null &&
-                        playerHealth.health > 0 && enemyHealth.health <= 0)
+                    Animator playerAnim = playerHealth.animator;
+                    if (playerAnim != null)
                     {
-                        // ✅ Stop movement of Player2 (cupidmovement) and Player3 (heliosmovement)
-                        playermovement2 wanda = player.GetComponent<playermovement2>();
-                        if (wanda != null) wanda.isDead = true;
-
-                        playermovement3 westley = player.GetComponent<playermovement3>();
-                        if (westley != null) westley.isDead = true;
-
-                        // ✅ Optionally trigger win animation
-                        Animator playerAnim = playerHealth.animator;
-                        if (playerAnim != null)
-                        {
-                            Debug.Log("Player Wins!");
-                            playerAnim.SetTrigger("win");
-                        }
+                        Debug.Log("Player Wins!");
+                        playerAnim.SetTrigger("win");
                     }
                 }
             }
-
         }
-    
+    }
 
+}
 
 
 
