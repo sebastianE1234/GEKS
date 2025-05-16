@@ -7,6 +7,7 @@ public class cupidmovement : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public bool usesWASD = true;
+    public bool isDead = false; // 🔹 Add this line
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -28,17 +29,28 @@ public class cupidmovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isDead) return; // 🔹 Stop checking ground when dead
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
     void Update()
     {
+        if (isDead)
+        {
+            // Stop movement completely when dead
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isJumping", false);
+            return;
+        }
+
         float moveInput = 0f;
 
         if (usesWASD)
         {
             if (Input.GetKey(KeyCode.A)) moveInput = -1f;
             if (Input.GetKey(KeyCode.D)) moveInput = 1f;
+
             if (Input.GetKeyDown(KeyCode.W))
             {
                 linearVelocity = new Vector2(linearVelocity.x, jumpForce);

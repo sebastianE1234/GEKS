@@ -56,7 +56,6 @@ public class Health : MonoBehaviour
             healthText.text = "Health: " + health;
         }
     }
-
     public void TakeDamage(int amount)
     {
         if (isDead) return;
@@ -67,6 +66,19 @@ public class Health : MonoBehaviour
         if (health <= 0)
         {
             isDead = true;
+
+            // Stop all movement on playermovement2 and playermovement3 if they exist
+            playermovement2 movementScript2 = GetComponent<playermovement2>();
+            if (movementScript2 != null)
+            {
+                movementScript2.isDead = true;
+            }
+
+            playermovement3 movementScript3 = GetComponent<playermovement3>();
+            if (movementScript3 != null)
+            {
+                movementScript3.isDead = true;
+            }
 
             if (CompareTag("player"))
             {
@@ -83,17 +95,15 @@ public class Health : MonoBehaviour
             {
                 Debug.Log("Enemy Died!");
                 if (animator != null)
-                {
                     animator.SetTrigger("Die");
-                    animator.SetTrigger("Death");
-                }
+
 
                 CheckForWinCondition(); // Player wins if enemy is dead
             }
         }
     }
 
-    private void TriggerOtherPlayerVictory()
+    void TriggerOtherPlayerVictory()
     {
         GameObject Enemy = GameObject.FindGameObjectWithTag("Enemy");
         if (Enemy != null)
@@ -112,20 +122,39 @@ public class Health : MonoBehaviour
         }
     }
     void CheckForWinCondition()
-    {
-        GameObject player = GameObject.FindGameObjectWithTag("player");
-        if (player != null)
-        {
-            Health playerHealth = player.GetComponent<Health>();
-            if (playerHealth != null && !playerHealth.isDead)
             {
-                Animator playerAnim = playerHealth.animator;
-                if (playerAnim != null)
+                GameObject player = GameObject.FindGameObjectWithTag("player");
+                GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
+
+                if (player != null && enemy != null)
                 {
-                    Debug.Log("Player Wins!");
-                    playerAnim.SetTrigger("win");
+                    Health playerHealth = player.GetComponent<Health>();
+                    Health enemyHealth = enemy.GetComponent<Health>();
+
+                    if (playerHealth != null && enemyHealth != null &&
+                        playerHealth.health > 0 && enemyHealth.health <= 0)
+                    {
+                        // ✅ Stop movement of Player2 (cupidmovement) and Player3 (heliosmovement)
+                        playermovement2 wanda = player.GetComponent<playermovement2>();
+                        if (wanda != null) wanda.isDead = true;
+
+                        playermovement3 westley = player.GetComponent<playermovement3>();
+                        if (westley != null) westley.isDead = true;
+
+                        // ✅ Optionally trigger win animation
+                        Animator playerAnim = playerHealth.animator;
+                        if (playerAnim != null)
+                        {
+                            Debug.Log("Player Wins!");
+                            playerAnim.SetTrigger("win");
+                        }
+                    }
                 }
             }
+
         }
-    }
-}
+    
+
+
+
+

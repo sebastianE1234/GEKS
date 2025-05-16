@@ -13,6 +13,9 @@ public class playermovement3 : MonoBehaviour
     private Animator animator;
     private bool facingRight = true;
 
+    // Add isDead flag
+    public bool isDead = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,12 +24,23 @@ public class playermovement3 : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isDead) return; // Prevent ground check if dead
+
         // Ground check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
     void Update()
     {
+        if (isDead)
+        {
+            // Stop all movement and animations when dead
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("Is walking", false);
+            animator.SetBool("isJumping", false);
+            return;
+        }
+
         float moveInput = 0f;
 
         // Player 1 controls (WASD)
@@ -60,14 +74,7 @@ public class playermovement3 : MonoBehaviour
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         // Update animation state
-        if (Mathf.Abs(moveInput) > 0.1f)
-        {
-            animator.SetBool("Is walking", true); // Set walking animation
-        }
-        else
-        {
-            animator.SetBool("Is walking", false); // Set idle animation
-        }
+        animator.SetBool("Is walking", Mathf.Abs(moveInput) > 0.1f);
 
         // Flip character direction
         if (moveInput > 0 && !facingRight)

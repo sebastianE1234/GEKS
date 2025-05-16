@@ -4,7 +4,7 @@ public class damage2 : MonoBehaviour
 {
 
     public int damage = 20;
-    private Health playerHealth;
+    private health2 playerHealth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,7 +24,7 @@ public class damage2 : MonoBehaviour
         {
             if (playerHealth == null)
             {
-                playerHealth = collision.gameObject.GetComponent<Health>();
+                playerHealth = collision.gameObject.GetComponent<health2>();
             }
 
             playerHealth.TakeDamage(damage);
